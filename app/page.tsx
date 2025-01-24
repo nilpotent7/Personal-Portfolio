@@ -1,19 +1,21 @@
 import '@/app/page.scss'
 import Image from 'next/image'
 import OpenButton from '@/components/openButton';
-import Collage from '@/components/collage';
+import Background from '@/components/background'
 
 export const metadata = {
-    title: 'Shehroz K.',
-    description: 'Full-Stack Web3 Developer | Strap on as we chart the unknown of Web3.',
+    title: 'Behroz Khan',
+    description: 'Passionate Game Designer | Turning dreams into reality.',
     image: '/squiggle.png'
 }
 
 export default function Home() {
     return <>
-    <meta property="og:site_name" content="Shehrozk"/>
-    <meta property="og:title" content="Shehroz K."/>
-    <meta property="og:description" content="Full-Stack Web3 Developer | Strap on as we chart the unknown of Web3." />
+    <meta property="og:site_name" content="BehrozK"/>
+    <meta property="og:title" content="Behroz Khan's Portfolio"/>
+    <meta property="og:description" content="Passionate Game Designer | Turning dreams into reality." />
+
+    <Background/>
 
         <section className='intro' id='hero'>
             <div className="introImage"></div>
@@ -48,10 +50,6 @@ export default function Home() {
                 </div>
             </div>
 
-        </section>
-
-        <section>
-            <Collage />
         </section>
     </>
 }

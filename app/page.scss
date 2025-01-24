@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('Artwork.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50%), url('Artwork.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
