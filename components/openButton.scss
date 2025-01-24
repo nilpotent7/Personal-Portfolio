@@ -1,0 +1,26 @@
+.readCaseStudyButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+  font-family: var(--font);
+  font-size: 1.2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary);
+  background: var(--bg-transparent);
+  backdrop-filter: var(--blur);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  img {
+    margin-left: 20px;
+    transition: transform 150ms ease-in-out;
+  }
+
+  &:hover {
+    img {
+      transform: translateX(10px);
+    }
+  }
+}

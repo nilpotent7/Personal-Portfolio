@@ -1,0 +1,26 @@
+.scrollToTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--border-radius);
+  backdrop-filter: var(--blur);
+  box-shadow: 0 0 20px 0 #00000033;
+  height: var(--navbar-height);
+  --width: 50px;
+  width: var(--width);
+  margin: 12px auto 0;
+  position: fixed;
+  z-index: 100;
+  top: 86%;
+  left: calc(90% - var(--width));
+  cursor: pointer;
+
+  a {
+    margin: 0;
+    width: 25px;
+    height: 25px;
+  }
+}
