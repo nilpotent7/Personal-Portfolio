@@ -8,9 +8,9 @@ import Background from '@/components/background'
 const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ['latin'], variable: '--font-poppins', })
 
 export const metadata = {
-  title: 'Shehroz K.',
-  description: 'A FrontEnd Web3 Developer',
-  image: '/squiggle.png'
+  title: 'Behroz K.',
+  description: 'A Game Developer',
+  image: '/Avatar.jpg'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
