@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    z-index: 2;
+    padding-top: 25px;
+
+    img {
+      cursor: pointer;
+      transition: transform 200ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+}

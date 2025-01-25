@@ -1,7 +1,7 @@
 import '@/app/page.scss'
 import Image from 'next/image'
-import OpenButton from '@/components/openButton';
-import Background from '@/components/background'
+import Socials from '@/components/socials'
+import OpenButton from '@/components/openButton'
 
 export const metadata = {
     title: 'Behroz Khan',
@@ -10,12 +10,11 @@ export const metadata = {
 }
 
 export default function Home() {
+    
     return <>
     <meta property="og:site_name" content="BehrozK"/>
     <meta property="og:title" content="Behroz Khan's Portfolio"/>
     <meta property="og:description" content="Passionate Game Designer | Turning dreams into reality." />
-
-    <Background/>
 
         <section className='intro' id='hero'>
             <div className="introImage"></div>
@@ -25,31 +24,26 @@ export default function Home() {
             </div>
         </section>
 
-        <section className='post'>
-            <div className='card' id='projects'>
-                <div className='cardContent'>
-                    <div className='description'>
-                        <h3><a href="https://whoopdoop.com" target="_blank">Whoopdoop Labs</a></h3>
-                        <h1>A Raffle System</h1>
-                        <p> Designed & developed a cross chain raffle system for ERC-721 tokens, that facilitated over 100k ticket purchases. </p>
-                        <OpenButton title='Read Case Study' href='raffle-case-study'/>
+        <section className='longIntro'>
+            <div className="longIntroCard" id='projects'>
+                <div className='longIntroCardContent'>
+                    <div className='longIntroMedia'>
+                        <Image className='longIntroAvatar' src='/Avatar.jpg' alt='Avatar' width={363} height={321}/>
+                        <div className='longIntroSocials'><Socials size={50} width={300}/></div>
                     </div>
-                    <Image className='splash' src='/raffleCard.webp' alt='Raffle Cards' width={2810/*2635*/} height={1600} style={{aspectRatio: '2810/1600' }}/>
+                    <div className="longIntroDescription">
+                        <div className="longIntroText">
+                            <h1 className='longIntroTitle'>Behroz Khan</h1>
+                            <p className='longIntroTitle'>Hello :D<br/>I'm Behroz K. aka Nilpotent</p>
+                            <p>I'm a passionate self-taught Game Designer & Programmer with a deep interest in creating engaging & memorable experiences. I have also worked with <b>neural networks</b>, <b>rendering algorithms</b>, <b>GPU Compute Shaders</b>, <b>sentimental analysis</b>, <b>networking</b>, etc.</p>
+                            <p>I'm currently a student and started game development at the age of 9. Over the past eight years, I've explored various aspects of game development, as well as working on various aspects of advanced computer science. This has allowed me to develop not only technical skills but also creativity & problem-solving abilities that I bring to every project I undertake!</p>
+                        </div>
+                        <div className="longIntroButton">
+                            <OpenButton title='View Portfolio' href='' />
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div className='card'>
-                <div className='cardContent'>
-                    <div className='description'>
-                        <h3><a href="https://omibio.netlify.app/" target="_blank">Omibio</a></h3>
-                        <h1>A Web3 Music Aggregator</h1>
-                        <p> ⚠️ WIP: Developed a Music Distribution Service that allows artists to mint their songs as on-chain trade-able tokens.</p>
-                        <OpenButton title='Read Case Study' href='omibio-case-study' />
-                    </div>
-                    <Image className='omibio' src='/omibio.webp' alt='Omibio App Screens' width={3188/*2635*/} height={2048} style={{aspectRatio: '3188/2048'}} />
-                </div>
-            </div>
-
         </section>
     </>
 }

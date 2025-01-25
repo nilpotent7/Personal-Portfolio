@@ -3,6 +3,7 @@
 import '@/components/background.scss'
 import React, {useEffect, useState} from 'react';
 
+const textUpdateFrameDelay = 3;
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 function randomString(length : number)
 {
@@ -38,29 +39,55 @@ function useWindowSize() {
 
 export default function Background() {
     const size = useWindowSize();
+    const [frame, setFrame] = useState(0);
     const [text, setText] = useState(randomString(size.height * size.width * 0.01));
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
+        let targetX = window.innerWidth / 2;
+        let targetY = window.innerHeight / 2;
+        let currentX = targetX;
+        let currentY = targetY;
+
+        const easeInOut = (t : number) => t * t * (3 - 2 * t);
+
         const handleMouseMove = (event : MouseEvent) => {
           const { clientX, clientY } = event;
-          setMousePosition({ x: clientX, y: clientY });
+
+          targetX = clientX;
+          targetY = clientY;
         };
-    
+
+        const updateMaskPosition = () => {
+          const speed = 0.25;
+          currentX += (targetX - currentX) * easeInOut(speed);
+          currentY += (targetY - currentY) * easeInOut(speed);
+          setMousePosition({ x: currentX, y: currentY });
+          requestAnimationFrame(updateMaskPosition);
+        }
+        
         window.addEventListener("mousemove", handleMouseMove);
+        updateMaskPosition();
     
         return () => {
           window.removeEventListener("mousemove", handleMouseMove);
         };
     }, []);
 
-    const handleMouseMove = () => setText(randomString(size.height * size.width * 0.01))
+    const handleMouseMove = () => {
+      setFrame(frame+1);
+      
+      if(frame < textUpdateFrameDelay) return;
+      setFrame(0);
+      setText(randomString(size.height * size.width * 0.01));
+    }
     
     return (
-        <div className="background" onMouseMove={handleMouseMove}
+        <div className="background" 
+            onMouseMove={handleMouseMove}
             style={{
-                WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.01))`,
-                maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.01))`
+                WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.02))`,
+                maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.02))`,
             }}
         >
             {text}
