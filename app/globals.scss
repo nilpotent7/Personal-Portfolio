@@ -6,7 +6,7 @@
   --bg-accent: rgb(16, 16, 16);
   --bg-lamp: rgba(40, 119, 194, 0.3);
   --navbar-color: rgba(255,255,255,.08);
-  --img-selection: #2bcd0090;
+  --img-selection: #68949490;
   --text-color-xlight: rgb(255 255 255 / 40%);
   --text-color-light: rgb(255 255 255 / 75%);
   --text-color: rgb(250 249 246);
@@ -129,6 +129,7 @@ a {
 :root {
   p::selection,
   a::selection,
+  b::selection,
   h1::selection,
   h2::selection,
   h3::selection,

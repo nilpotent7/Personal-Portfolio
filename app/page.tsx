@@ -6,7 +6,7 @@ import OpenButton from '@/components/openButton'
 export const metadata = {
     title: 'Behroz Khan',
     description: 'Passionate Game Designer | Turning dreams into reality.',
-    image: '/squiggle.png'
+    image: '/../public/Avatar.jpg'
 }
 
 export default function Home() {
@@ -28,15 +28,15 @@ export default function Home() {
             <div className="longIntroCard" id='projects'>
                 <div className='longIntroCardContent'>
                     <div className='longIntroMedia'>
-                        <Image className='longIntroAvatar' src='/Avatar.jpg' alt='Avatar' width={363} height={321}/>
-                        <div className='longIntroSocials'><Socials size={50} width={300}/></div>
+                        <img className='longIntroAvatar' src='/Avatar.jpg' alt='Avatar' style={{width: '360px', height: '360px'}}/>
+                        <div className='longIntroSocials'><Socials size={40} /></div>
                     </div>
                     <div className="longIntroDescription">
                         <div className="longIntroText">
-                            <h1 className='longIntroTitle'>Behroz Khan</h1>
-                            <p className='longIntroTitle'>Hello :D<br/>I&apos;m Behroz K. aka Nilpotent</p>
-                            <p>I&apos;m a passionate self-taught Game Designer & Programmer with a deep interest in creating engaging & memorable experiences. I have also worked with <b>neural networks</b>, <b>rendering algorithms</b>, <b>GPU Compute Shaders</b>, <b>sentimental analysis</b>, <b>networking</b>, etc.</p>
-                            <p>I&apos;m currently a student and started game development at the age of 9. Over the past eight years, I&apos;ve explored various aspects of game development, as well as working on various aspects of advanced computer science. This has allowed me to develop not only technical skills but also creativity & problem-solving abilities that I bring to every project I undertake!</p>
+                            <h1>Behroz Khan</h1>
+                            <p>Hello :D<br/>I&apos;m Behroz K. aka Nilpotent</p>
+                            <p>I&apos;m a passionate self-taught Game Developer & Programmer and I&apos;ve worked with <b>Neural Networks</b>, <b>Sentimental Analysis</b>, <b>Networking</b>, <b>Rendering Algorithms</b>, <b>GPU Compute Shaders</b>, etc.</p>
+                            <p>I&apos;m a student who began game development at the age of 9. Over the eight years, I&apos;ve acquired technical skills, creativity, and problem-solving through exploring game development &amp; advanced computer science.</p>
                         </div>
                         <div className="longIntroButton">
                             <OpenButton title='View Portfolio' href='' />

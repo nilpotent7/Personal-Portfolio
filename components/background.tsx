@@ -3,13 +3,13 @@
 import '@/components/background.scss'
 import React, {useEffect, useState} from 'react';
 
-const textUpdateFrameDelay = 3;
+const textUpdateFrameDelay = 5;
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 function randomString(length : number)
 {
     let string = "";
     for(let i = 0; i < length; i++)
-        string += chars[Math.floor(Math.random() * chars.length)];
+        string += chars[Math.floor(Math.random() * chars.length)] + " ";
     return string;
 }
 
@@ -86,8 +86,8 @@ export default function Background() {
         <div className="background" 
             onMouseMove={handleMouseMove}
             style={{
-                WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.02))`,
-                maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.02))`,
+                WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.01))`,
+                maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.01))`,
             }}
         >
             {text}
