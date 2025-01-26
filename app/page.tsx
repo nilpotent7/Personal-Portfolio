@@ -29,13 +29,13 @@ export default function Home() {
                 <div className='longIntroCardContent'>
                     <div className='longIntroMedia'>
                         <img className='longIntroAvatar' src='/Avatar.jpg' alt='Avatar' style={{width: '360px', height: '360px'}}/>
-                        <div className='longIntroSocials'><Socials size={40} /></div>
+                        <div className='longIntroSocials'><Socials size={40} width={300} /></div>
                     </div>
                     <div className="longIntroDescription">
                         <div className="longIntroText">
                             <h1>Behroz Khan</h1>
                             <p>Hello :D<br/>I&apos;m Behroz K. aka Nilpotent</p>
-                            <p>I&apos;m a passionate self-taught Game Developer & Programmer and I&apos;ve worked with <b>Neural Networks</b>, <b>Sentimental Analysis</b>, <b>Networking</b>, <b>Rendering Algorithms</b>, <b>GPU Compute Shaders</b>, etc.</p>
+                            <p>I&apos;m a self-taught Game Developer & Programmer and I&apos;ve worked with <b>Neural Networks</b>, <b>Sentimental Analysis</b>, <b>GPU Programming</b>, <b>Compute Shaders</b>, <b>Rendering Algorithms</b>, <b>Network Programming</b>, and more.</p>
                             <p>I&apos;m a student who began game development at the age of 9. Over the eight years, I&apos;ve acquired technical skills, creativity, and problem-solving through exploring game development &amp; advanced computer science.</p>
                         </div>
                         <div className="longIntroButton">

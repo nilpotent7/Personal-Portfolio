@@ -4,9 +4,9 @@ import '@/components/socials.scss'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-export default function Socials({ size } : { size : number }) {
+export default function Socials({ size, width } : { size : number, width : number }) {
     return (
-        <div className='socials' style={{width: '300px' }}>
+        <div className='socials' style={{width: width }}>
             <motion.a
                 href="https://github.com/nilpotent7/" target="_blank"
                 whileHover={{ scale: 1.1}}
