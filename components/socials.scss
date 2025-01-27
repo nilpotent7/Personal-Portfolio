@@ -4,17 +4,28 @@
   align-items: center;
   justify-content: space-between;
   z-index: 2;
+  user-select: none;
 
   a {
     display: flex;
   }
 
-  img {
+  .iconSVG {
     cursor: pointer;
-    transition: transform 200ms ease-in-out;
+    background-color: #666;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    
+    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out;
 
     &:hover {
       transform: scale(1.1);
+      background-color: var(--secondary-hover);
     }
   }
 }

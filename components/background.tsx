@@ -62,6 +62,8 @@ export default function Background() {
           const speed = 0.25;
           currentX += (targetX - currentX) * easeInOut(speed);
           currentY += (targetY - currentY) * easeInOut(speed);
+          if((currentX - targetX) < 0.001) currentX = targetX;
+          if((currentY - targetY) < 0.001) currentY = targetY;
           setMousePosition({ x: currentX, y: currentY });
           requestAnimationFrame(updateMaskPosition);
         }

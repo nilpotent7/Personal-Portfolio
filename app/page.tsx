@@ -28,7 +28,7 @@ export default function Home() {
             <div className="longIntroCard" id='projects'>
                 <div className='longIntroCardContent'>
                     <div className='longIntroMedia'>
-                        <img className='longIntroAvatar' src='/Avatar.jpg' alt='Avatar' style={{width: '360px', height: '360px'}}/>
+                        <img className='longIntroAvatar' src='/Avatar.jpg' alt='Avatar'/>
                         <div className='longIntroSocials'><Socials size={40} width={300} /></div>
                     </div>
                     <div className="longIntroDescription">

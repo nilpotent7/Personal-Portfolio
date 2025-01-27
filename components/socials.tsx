@@ -12,7 +12,14 @@ export default function Socials({ size, width } : { size : number, width : numbe
                 whileHover={{ scale: 1.1}}
                 whileTap={{ scale: 0.9 }}
             >
-                <Image src='/icons/github.svg' alt='github' width={size * 0.9} height={size * 0.9}/>
+                <div className='iconSVG'
+                    style={{
+                        width: (size * 0.9) + "px",
+                        height: (size * 0.9) + "px",
+                        WebkitMaskImage: "url('/icons/github.svg')",
+                        maskImage: "url('/icons/github.svg')",
+                    }}
+                />
             </motion.a>
 
             <motion.a
@@ -20,7 +27,14 @@ export default function Socials({ size, width } : { size : number, width : numbe
                 whileHover={{ scale: 1.1}}
                 whileTap={{ scale: 0.9 }}
             >
-                <Image src='/icons/x.svg' alt='x' width={size * 0.8} height={size * 0.8}/>
+                <div className='iconSVG'
+                    style={{
+                        width: (size * 0.8) + "px",
+                        height: (size * 0.8) + "px",
+                        WebkitMaskImage: "url('/icons/x.svg')",
+                        maskImage: "url('/icons/x.svg')",
+                    }}
+                />
             </motion.a>
 
             <motion.a
@@ -28,7 +42,14 @@ export default function Socials({ size, width } : { size : number, width : numbe
                 whileHover={{ scale: 1.1}}
                 whileTap={{ scale: 0.9 }}
             >
-                <Image src='/icons/instagram.svg' alt='instagram' width={size * 0.85} height={size * 0.85}/>
+                <div className='iconSVG'
+                    style={{
+                        width: (size * 0.85) + "px",
+                        height: (size * 0.85) + "px",
+                        WebkitMaskImage: "url('/icons/instagram.svg')",
+                        maskImage: "url('/icons/instagram.svg')",
+                    }}
+                />
             </motion.a>
                 
             <motion.a
@@ -36,7 +57,14 @@ export default function Socials({ size, width } : { size : number, width : numbe
                 whileHover={{ scale: 1.1}}
                 whileTap={{ scale: 0.9 }}
             >
-                <Image src='/icons/itchio.svg' alt='itch' width={size * 0.9} height={size * 0.9}/>
+                <div className='iconSVG'
+                    style={{
+                        width: (size * 0.9) + "px",
+                        height: (size * 0.9) + "px",
+                        WebkitMaskImage: "url('/icons/itchio.svg')",
+                        maskImage: "url('/icons/itchio.svg')",
+                    }}
+                />
             </motion.a>
 
       </div>

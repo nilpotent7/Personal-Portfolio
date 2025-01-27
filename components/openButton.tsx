@@ -12,7 +12,7 @@ export default function OpenButton({ title, href }: { title: string, href: strin
             whileTap={{ scale: 0.95 }}
         >
             <Link href={href}>
-                <button className='readCaseStudyButton'>{title}
+                <button className='openButton'>{title}
                     <Image src='/icons/rightArrow.svg' alt='left arrow' width={25} height={25}/>
                 </button>
             </Link>
