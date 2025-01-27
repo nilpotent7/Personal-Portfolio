@@ -1,12 +1,11 @@
 import '@/app/page.scss'
-import Image from 'next/image'
 import Socials from '@/components/socials'
 import OpenButton from '@/components/openButton'
 
 export const metadata = {
     title: 'Behroz Khan',
-    description: 'Passionate Game Designer | Turning dreams into reality.',
-    image: '/../public/Avatar.jpg'
+    description: 'Passionate Game Developer | Turning dreams into reality.',
+    image: '/Avatar.jpg'
 }
 
 export default function Home() {
@@ -14,13 +13,13 @@ export default function Home() {
     return <>
     <meta property="og:site_name" content="BehrozK"/>
     <meta property="og:title" content="Behroz Khan's Portfolio"/>
-    <meta property="og:description" content="Passionate Game Designer | Turning dreams into reality." />
+    <meta property="og:description" content="Passionate Game Developer | Turning dreams into reality." />
 
         <section className='intro' id='hero'>
             <div className="introImage"></div>
             <div className='introContent'>
                 <h1>Behroz Khan</h1>
-                <p>The Passionate Game Designer</p>
+                <p>The Passionate Game Developer</p>
             </div>
         </section>
 
