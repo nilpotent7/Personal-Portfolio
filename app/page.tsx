@@ -5,16 +5,23 @@ import OpenButton from '@/components/openButton'
 export const metadata = {
     title: 'Behroz Khan',
     description: 'Passionate Game Developer | Turning dreams into reality.',
-    image: '/Avatar.jpg'
+    openGraph: {
+        title: 'Behroz Khan',
+        description: 'Passionate Game Developer | Turning dreams into reality',
+        type: 'website',
+        images: [
+            {
+                url: '/Embed.png',
+                width: 2048,
+                height: 2048,
+            },
+        ],
+    },
 }
 
 export default function Home() {
     
     return <>
-    <meta property="og:site_name" content="BehrozK"/>
-    <meta property="og:title" content="Behroz Khan's Portfolio"/>
-    <meta property="og:description" content="Passionate Game Developer | Turning dreams into reality." />
-
         <section className='intro' id='hero'>
             <div className="introImage"></div>
             <div className='introContent'>
