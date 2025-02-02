@@ -3,7 +3,7 @@
 import '@/components/background.scss'
 import React, {useEffect, useState} from 'react';
 
-const textUpdateFrameDelay = 5;
+const textUpdateFrameDelay = 3;
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 function randomString(length : number)
 {

@@ -18,8 +18,8 @@
     height: 100%;
     background-image: 
       linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 60%),
-      linear-gradient(to right, rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0) 60%),
-      url('../public/Artwork.jpg');
+      linear-gradient(to right, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0) 60%),
+      url('../public/Artwork.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@
     justify-content: center;
 
     h1 {
-      color: #ff3e3e;
+      color: var(--primary-hover);
       font-family: var(--font);
       font-size: 5rem;
       font-weight: 800;
@@ -47,7 +47,7 @@
 
     p {
       font-family: var(--font);
-      color: #ff3e3e;
+      color: var(--primary-hover);
       font-size: 1.75rem;
       font-weight: 400;
       line-height: 1.2em;
@@ -86,7 +86,7 @@
     }
 
     .introImage {
-      background-image: radial-gradient(circle 500px at 50% 50%, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)), url('../public/Artwork.jpg');
+      background-image: radial-gradient(circle 500px at 50% 50%, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)), url('../public/Artwork.png');
       background-attachment: scroll;
       align-self: center;
     }
@@ -121,7 +121,7 @@
     }
 
     .introImage {
-      background-image: radial-gradient(circle 500px at 50% 50%, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)), url('../public/Artwork.jpg');
+      background-image: radial-gradient(circle 500px at 50% 50%, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)), url('../public/Artwork.png');
       background-attachment:scroll;
     }
   }
