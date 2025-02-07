@@ -1,12 +1,6 @@
 import '@/app/omibio-case-study/page.scss'
 import ScrollToTop from '@/components/scrollToTop'
 
-export const metadata = {
-    title: 'Omibio | Case Study',
-    description: 'Developing a Music Distribution Service that allows artists to mint their songs as on-chain trade-able tokens.',
-    image: '/omibio.webp'
-}
-
 export default function RaffleCaseStudy() {
     return <>
         <section className='omibioIntro'>

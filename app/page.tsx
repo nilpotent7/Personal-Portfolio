@@ -2,23 +2,6 @@ import '@/app/page.scss'
 import Socials from '@/components/socials'
 import OpenButton from '@/components/openButton'
 
-export const metadata = {
-    title: 'Behroz Khan',
-    description: 'Passionate Game Developer | Turning dreams into reality.',
-    openGraph: {
-        title: 'Behroz Khan',
-        description: 'Passionate Game Developer | Turning dreams into reality',
-        type: 'website',
-        images: [
-            {
-                url: '/Embed.png',
-                width: 2048,
-                height: 2048,
-            },
-        ],
-    },
-}
-
 export default function Home() {
     
     return <>

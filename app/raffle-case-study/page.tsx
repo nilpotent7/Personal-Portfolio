@@ -3,12 +3,6 @@ import Image from 'next/image'
 import ScrollToTop from '@/components/scrollToTop'
 import { Tweet } from 'react-tweet'
 
-export const metadata = {
-    title: 'Raffle System | Case Study',
-    description: 'Designed & developed a cross chain raffle system for ERC-721 tokens, that facilitated over 100k ticket purchases.',
-    image: '/raffleCS.webp'
-}
-
 export default function RaffleCaseStudy() {
     return <>
         <section className='raffleIntro'>
