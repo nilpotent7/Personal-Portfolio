@@ -7,6 +7,7 @@ import Background from '@/components/background'
 const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ['latin'], variable: '--font-poppins', })
 
 export const metadata = {
+  metadataBase: new URL("https://nilpotent.vercel.app"),
   title: 'Behroz Khan',
   description: 'Passionate Game Developer | Turning dreams into reality.',
   openGraph: {
