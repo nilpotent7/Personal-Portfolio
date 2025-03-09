@@ -3,7 +3,7 @@
 import '@/components/background.scss'
 import React, {useEffect, useState} from 'react';
 
-const textUpdateFrameDelay = 3;
+const textUpdateFrameDelay = 5;
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 function randomString(length : number)
 {
@@ -88,8 +88,8 @@ export default function Background() {
         <div className="background" 
             onMouseMove={handleMouseMove}
             style={{
-                WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.01))`,
-                maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.01))`,
+              WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.35), rgba(0,0,0,0.035))`,
+              maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.35), rgba(0,0,0,0.035))`,
             }}
         >
             {text}
