@@ -38,7 +38,7 @@
 
     h1 {
       // color: var(--primary-hover);
-      background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+      background-image: var(--gradient);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
@@ -51,7 +51,7 @@
 
     p {
       // color: var(--primary-hover);
-      background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+      background-image: var(--gradient);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
@@ -201,6 +201,7 @@
         .longIntroText{
           h1, h3, p {
             font-family: var(--font);
+            font-weight: 400;
           }
 
           h1 {
@@ -219,7 +220,8 @@
 
           p {
             color: var(--text-color-light);
-            line-height: 1.5rem;
+            line-height: 2rem;
+            font-size: 1.1rem;
             margin-bottom: 24px;
           }
         }
@@ -342,11 +344,11 @@
 
     h1
     {
-      background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+      background-image: var(--gradient);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
-      font-size: 4rem;
+      font-size: 3.75rem;
       font-weight: 800;
       letter-spacing: -1.4px;
       user-select: none;
