@@ -42,10 +42,18 @@ export default function Home() {
             </div>
 
             <div className="portfolioProjects">
-                <Link href='' className='projectCard' style={{backgroundImage: "url('projects/TheJuicer2.png')"}}>
+                <Link href='' className='projectCard' style={{backgroundImage: "url('projects/ChronoStrike.png')"}}>
+                    <div className="cardOverlay">
+                        <h2>Chronostrike</h2>
+                        <p>3D Endless Shooter made in 7 days</p>
+                    </div>
                 </Link>
 
-                <Link href='' className='projectCardEnd' style={{backgroundImage: "url('projects/GummyJump.png')"}}>
+                <Link href='' className='projectCard' style={{backgroundImage: "url('projects/GluedTogether.png')"}}>
+                    <div className="cardOverlay">
+                        <h2>Glued Together</h2>
+                        <p>Top Down Puzzler made with a team in 7 days</p>
+                    </div>
                 </Link>
             </div>
 

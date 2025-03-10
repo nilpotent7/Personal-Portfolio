@@ -11,7 +11,7 @@ export default function RaffleCaseStudy() {
                 <h1>Games</h1>
 
                 <div className="projectTypeGrid">
-                    <Link href='' className='projectCard' style={{backgroundImage: "url('projects/TheJuicer2.png')"}}>
+                    {/* <Link href='' className='projectCard' style={{backgroundImage: "url('projects/TheJuicer2.png')"}}>
                         <div className="cardOverlay">
                             <h2>The Juicer 2</h2>
                             <p>3D Shooter with stylized graphics & arcade gameplay</p>
@@ -23,9 +23,9 @@ export default function RaffleCaseStudy() {
                             <h2>Gummy Jump 2</h2>
                             <p>2D Platformer with gritty graphics & precise movement</p>
                         </div>
-                    </Link>
+                    </Link> */}
 
-                    <Link href='' className='projectCard' style={{backgroundImage: "url('projects/Chronostrike.png')"}}>
+                    <Link href='' className='projectCard' style={{backgroundImage: "url('projects/ChronoStrike.png')"}}>
                         <div className="cardOverlay">
                             <h2>Chronostrike</h2>
                             <p>3D Endless Shooter made in 7 days</p>
