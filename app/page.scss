@@ -199,12 +199,12 @@
       .longIntroDescription{
         margin-top: 25px;
         .longIntroText{
-          h1, h3, p {
-            font-family: var(--font);
+          h1, h3 , p {
             font-weight: 400;
           }
 
           h1 {
+            font-family: var(--font);
             color: var(--text-color);
             font-size: 2.6rem;
             line-height: 1.3;
@@ -212,6 +212,7 @@
           }
 
           h3 {
+            font-family: var(--font-alt);
             color: var(--primary);
             text-transform: uppercase;
             font-size: 0.76rem;
@@ -219,6 +220,7 @@
           }
 
           p {
+            font-family: var(--font-alt);
             color: var(--text-color-light);
             line-height: 2rem;
             font-size: 1.1rem;
