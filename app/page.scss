@@ -20,6 +20,8 @@
       linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 60%),
       linear-gradient(to right, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0) 60%),
       url('../public/Artwork.png');
+
+    filter: sepia(0.75) hue-rotate(350deg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,190 +147,8 @@
     padding-right: 2rem;
   }
 
-  .longIntroCard {
-    width: 75%;
-    position: relative;
-    background-color: var(--bg-accent);
-    border: 1px solid var(--border-color);
-    border-radius: 1.5rem;
-    margin-bottom: 4rem;
-    box-shadow: 0 0 40px 15px #000;
-
-    .longIntroCardContent {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-
-      background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-      background-position: 50% 50%;
-      background-size: 1.1rem 1.1rem;
-
-      gap: 2rem;
-      padding-left: 4rem;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      padding-right: 4rem;
-
-      border-radius: 1.25rem;
-      overflow: hidden;
-
-      .longIntroMedia{
-
-        .longIntroAvatar{
-          border: 1px solid rgb(255 255 255 / 5%);
-          border-radius: 3rem;
-          box-shadow: 0 0 50px 2px #000;
-          margin-bottom: 25px;
-          margin-top: 25px;
-          user-select: none;
-          width: 100%;
-          height: 80%;
-          max-height: 300px;
-          max-width: 360px;
-        }
-
-        .longIntroSocials {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-top: auto;
-        }
-      }
-
-      .longIntroDescription{
-        margin-top: 25px;
-        .longIntroText{
-          h1, h3 , p {
-            font-weight: 400;
-          }
-
-          h1 {
-            font-family: var(--font);
-            color: var(--text-color);
-            font-size: 2.6rem;
-            line-height: 1.3;
-            margin-bottom: 24px;
-          }
-
-          h3 {
-            font-family: var(--font-alt);
-            color: var(--primary);
-            text-transform: uppercase;
-            font-size: 0.76rem;
-            margin-bottom: 8px;
-          }
-
-          p {
-            font-family: var(--font-alt);
-            color: var(--text-color-light);
-            line-height: 2rem;
-            font-size: 1.25rem;
-            margin-bottom: 24px;
-          }
-        }
-
-        .longIntroButton {
-          display: flex;
-          justify-content: flex-end;
-          width: 100%;
-          margin-top: 12.5%;
-
-          a {
-            display: flex;
-          }
-        }
-      }
-
-      @media (max-width: 1455px) {
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 2rem;
-        padding-right: 2rem;
-
-        .longIntroMedia
-        {
-          align-self: center;
-          align-items: center;
-        }
-
-        .longIntroText {
-          h1,p {
-            text-align: center;
-          }
-        }
-
-        .longIntroDescription
-        {
-          .longIntroButton
-          {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-top: 12.5%;
-
-            a {
-              display: flex;
-            }
-          }
-        }
-        
-      }
-    }
-
-    @media (max-width: 1165px) {
-      width: 90%;
-    }
-
-    @media (max-width: 500px) {
-      .longIntroMedia
-      {
-        align-self: center;
-        align-items: center;
-        max-width: 80%;
-        max-height: 80%;
-        object-fit: contain;
-        width: auto;
-        height: auto;
-
-        .longIntroAvatar
-        {
-          height: auto;
-          width: auto;
-          object-fit: contain;
-        }
-      }
-      
-    }
-  }
-
   @media screen and (max-width: 1400px) {
     padding: 1rem 1rem 0 1rem;
-
-    .card {
-      .cardContent {
-        flex-direction: column;
-        padding: 0;
-        width: 100%;
-
-        h1, p, h3 {
-          width: 100%;
-          align-self: center;
-          text-align: center;
-        }
-
-        a {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          margin: 0;
-
-          button {
-            align-self: center;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -401,7 +221,7 @@
         }
 
         p {
-          font-family: var(--font-alt);
+          font-family: var(--font-ubuntu);
           font-size: 1.25rem;
         }
       }
