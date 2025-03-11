@@ -1,6 +1,6 @@
 import '@/app/page.scss'
-import Socials from '@/components/socials'
 import OpenButton from '@/components/openButton'
+import DescriptionCard from '@/components/DescriptionCard'
 import Link from "next/link"
 
 export default function Home() {
@@ -15,25 +15,13 @@ export default function Home() {
         </section>
 
         <section className='longIntro'>
-            <div className="longIntroCard" id='projects'>
-                <div className='longIntroCardContent'>
-                    <div className='longIntroMedia'>
-                        <img className='longIntroAvatar' src='/Avatar.jpg' alt='Avatar'/>
-                        <div className='longIntroSocials'><Socials size={40} width={300} /></div>
-                    </div>
-                    <div className="longIntroDescription">
-                        <div className="longIntroText">
-                            <h1>Behroz Khan</h1>
-                            <p>Hello :D<br/>I&apos;m Behroz K. aka Nilpotent</p>
-                            <p>I&apos;m a self-taught Game Developer & Programmer.</p>
-                            <p>I&apos;m a student who began game development at the age of 9. Over the eight years, I&apos;ve worked with <b>Neural Networks</b>, <b>Sentimental Analysis</b>, <b>GPU Programming</b>, <b>Compute Shaders</b>, <b>Rendering Algorithms</b>, <b>Network Programming</b>, and more.</p>
-                        </div>
-                        <div className="longIntroButton">
-                            <OpenButton title='View Portfolio' href='' arrowSpace={20}/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <DescriptionCard addButton={true} buttonText="View Portfolio" buttonLink="/portfolio" addSocials={true} imageSource="/Avatar.jpg" imageSize={["300px", "360px"]} imageRounded={true} alignCenter={false} heading="Behroz Khan" text={
+                <>
+                    <p>Hello :D<br/>I&apos;m Behroz K. aka Nilpotent</p>
+                    <p>I&apos;m a self-taught Game Developer & Programmer.</p>
+                    <p>I&apos;m a student who began game development at the age of 9. Over the eight years, I&apos;ve worked with <b>Neural Networks</b>, <b>Sentimental Analysis</b>, <b>GPU Programming</b>, <b>Compute Shaders</b>, <b>Rendering Algorithms</b>, <b>Network Programming</b>, and more.</p>
+                </>
+            }/>
         </section>
 
         <section className='portfolio'>

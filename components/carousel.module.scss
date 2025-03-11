@@ -1,0 +1,168 @@
+.emblaWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  max-height: 80vh;
+
+  @media (max-width: 768px) {
+    max-height: 50vh;
+  }
+}
+
+.emblaContainer {
+  display: flex;
+  height: 100%;
+  transform: translateX(191.5px);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.emblaSlide {
+  position: relative;
+  flex: 0 0 80%;
+  min-width: 0;
+  height: 90%;
+  box-shadow: 0 0 60px 10px #000;
+  align-self: center;
+
+  transition: filter 0.4s ease, height 0.4s ease;
+  will-change: transform, filter, height;
+  
+  filter: brightness(25%);
+  opacity: 1;
+  z-index: 2;
+  
+  &[data-active="true"] {
+    opacity: 1;
+    z-index: 3;
+    filter: brightness(100%);
+    height: 100%;
+  }
+  
+  &[data-loading="true"] {
+    .emblaSlideInner {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+
+.emblaSlideInner {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.emblaSlideImgWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  img
+  {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+
+.emblaSlideImg {
+  position: absolute;
+  display: block;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: none;
+  object-fit: contain;
+}
+
+.emblaSlideLoader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.emblaSlideLoaderSpinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.emblaButton {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--border-radius);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255,255,255,0.08);
+  backdrop-filter: var(--blur);
+  box-shadow: 0 0 20px 0 #00000033;
+  margin: 12px auto 0;
+  
+  
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  &:disabled {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    width: 2.5rem;
+    height: 2.5rem;
+    
+    svg {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+}
+
+.emblaPrev {
+  left: 1rem;
+  
+}
+
+.emblaNext {
+  right: 1rem;
+}
+
