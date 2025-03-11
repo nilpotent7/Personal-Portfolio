@@ -124,7 +124,7 @@ export const Carousel = ({ slides }: CarouselProps) => {
                         }}
                       />
                     </> : <>
-                      <video controls className='video' width={slide.size[0]} height={slide.size[1]}>
+                      <video controls className='video' width={slide.size[0]} height={slide.size[1]} loop playsInline>
                           <source src={slide.src} type="video/mp4" />
                           {slide.alt}
                       </video>
