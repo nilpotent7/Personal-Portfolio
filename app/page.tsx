@@ -49,7 +49,7 @@ export default function Home() {
                     </div>
                 </Link>
 
-                <Link href='' className='projectCard' style={{backgroundImage: "url('projects/GluedTogether.png')"}}>
+                <Link href='' className='projectCardEnd' style={{backgroundImage: "url('projects/GluedTogether.png')"}}>
                     <div className="cardOverlay">
                         <h2>Glued Together</h2>
                         <p>Top Down Puzzler made with a team in 7 days</p>

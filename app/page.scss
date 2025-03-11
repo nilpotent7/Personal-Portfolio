@@ -37,7 +37,6 @@
     justify-content: center;
 
     h1 {
-      // color: var(--primary-hover);
       background-image: var(--gradient);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
@@ -223,7 +222,7 @@
             font-family: var(--font-alt);
             color: var(--text-color-light);
             line-height: 2rem;
-            font-size: 1.1rem;
+            font-size: 1.25rem;
             margin-bottom: 24px;
           }
         }
@@ -368,13 +367,13 @@
     margin: 2rem;
     text-align: center;
 
-    .projectCard {
+    .projectCard, .projectCardEnd {
       width: 100%;
       position: relative;
-      height: 25rem;
+      height: 23rem;
       border: 1px solid rgba(255, 255, 255, 0.05);
       border-radius: 1.5rem;
-      overflow: hidden; // Ensures child content (like the overlay) is clipped
+      overflow: hidden;
       box-shadow: 0 0 40px 15px #000;
       background-size: cover;
       background-position: center;
@@ -384,7 +383,7 @@
       .cardOverlay {
         align-content: flex-end;
         position: absolute;
-        bottom: -1px; // slight offset to cover any anti-aliasing gap
+        bottom: -1px;
         left: 0;
         right: 0;
         height: 15rem;
@@ -393,8 +392,7 @@
         color: #fff;
         opacity: 0;
         transition: opacity 200ms ease-in-out;
-        // Removed extra border radius; we rely on parent's clipping now
-        transform: translateZ(0); // Forces GPU compositing
+        transform: translateZ(0);
         backface-visibility: hidden;
 
         h2 {
@@ -424,7 +422,7 @@
     }
 
     .projectCard {
-      margin-right: 4rem;
+      margin-right: 2rem;
     }
 
     @media (max-width: 1165px) {
