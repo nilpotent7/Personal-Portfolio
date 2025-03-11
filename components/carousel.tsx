@@ -2,20 +2,21 @@
 
 import { useCallback, useEffect, useState, useRef } from "react"
 import useEmblaCarousel from "embla-carousel-react"
-import Image from "next/image"
 import styles from "./carousel.module.scss"
 import { motion } from 'framer-motion'
 
-type CarouselImage = {
+type CarouselSlide = {
+  video: boolean
+  size: Array<string>
   src: string
   alt: string
 }
 
 interface CarouselProps {
-  images: CarouselImage[]
+  slides: CarouselSlide[]
 }
 
-export const Carousel = ({ images }: CarouselProps) => {
+export const Carousel = ({ slides }: CarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "center",
@@ -24,7 +25,7 @@ export const Carousel = ({ images }: CarouselProps) => {
   })
 
   const [selectedIndex, setSelectedIndex] = useState(0)
-  const [imagesLoaded, setImagesLoaded] = useState<Record<number, boolean>>({})
+  const [slidesLoaded, setSlidesLoaded] = useState<Record<number, boolean>>({})
   const imageRefs = useRef<(HTMLImageElement | null)[]>([])
 
 
@@ -48,22 +49,22 @@ export const Carousel = ({ images }: CarouselProps) => {
 
   useEffect(() => {
     const initialLoadState: Record<number, boolean> = {}
-    images.forEach((_, index) => {
+    slides.forEach((_, index) => {
       initialLoadState[index] = false
     })
-    setImagesLoaded(initialLoadState)
+    setSlidesLoaded(initialLoadState)
 
-    images.forEach((image, index) => {
+    slides.forEach((slide, index) => {
       const img = new window.Image()
-      img.src = image.src
+      img.src = slide.src
       img.onload = () => {
-        setImagesLoaded((prev) => ({
+        setSlidesLoaded((prev) => ({
           ...prev,
           [index]: true,
         }))
       }
     })
-  }, [images])
+  }, [slides])
 
   useEffect(() => {
     if (!emblaApi) return
@@ -96,30 +97,41 @@ export const Carousel = ({ images }: CarouselProps) => {
     <div className={styles.emblaWrapper}>
       <div className={styles.embla} ref={emblaRef}>
         <div className={styles.emblaContainer}>
-          {images.map((image, index) => (
+          {slides.map((slide, index) => (
             <div
               className={styles.emblaSlide}
               key={index}
               data-active={index === selectedIndex}
-              data-loading={!imagesLoaded[index]}
+              data-loading={!slidesLoaded[index]}
             >
               <div
                 className={styles.emblaSlideInner}
               >
                 <div className={styles.emblaSlideImgWrapper}>
-                  <img
-                    ref={(el) => (imageRefs.current[index] = el)}
-                    className={styles.emblaSlideImg}
-                    src={image.src || "/placeholder.svg"}
-                    alt={image.alt}
-                    onLoad={() => {
-                      setImagesLoaded((prev) => ({
-                        ...prev,
-                        [index]: true,
-                      }))
-                    }}
-                  />
-                  {!imagesLoaded[index] && (
+                  {
+                    !slide.video ?
+                    <>
+                      <img
+                        ref={(el) => (imageRefs.current[index] = el)}
+                        className={styles.emblaSlideImg}
+                        src={slide.src || "/placeholder.svg"}
+                        alt={slide.alt}
+                        onLoad={() => {
+                          setSlidesLoaded((prev) => ({
+                            ...prev,
+                            [index]: true,
+                          }))
+                        }}
+                      />
+                    </> : <>
+                      <video controls className='video' width={slide.size[0]} height={slide.size[1]}>
+                          <source src={slide.src} type="video/mp4" />
+                          {slide.alt}
+                      </video>
+                    </>
+                  }
+
+                  {!slidesLoaded[index] && !slide.video && (
                     <div className={styles.emblaSlideLoader}>
                       <div className={styles.emblaSlideLoaderSpinner}></div>
                     </div>

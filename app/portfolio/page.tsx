@@ -76,7 +76,7 @@ export default function RaffleCaseStudy() {
                         </div>
                     </Link>
 
-                    <Link href='' className='projectCard'>
+                    <Link href='/projects/haunted-sewer' className='projectCard'>
                         <img src='projects/HauntedSewer.png'/>
                         <div className="cardOverlay">
                             <h2>Haunted Sewer</h2>
