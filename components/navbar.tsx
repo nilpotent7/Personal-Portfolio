@@ -6,7 +6,7 @@ export default function Navbar() {
         <nav>
             <ul>
                 <li><a href='/'>Home</a></li>
-                <li><a href='/portfolio'>Projects</a></li>
+                <li><a href='/portfolio'>Portfolio</a></li>
                 <li><a href='mailto:invalidmail07@gmail.com'>Contact</a></li>
             </ul>
         </nav>

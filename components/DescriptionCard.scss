@@ -74,7 +74,7 @@
         }
 
         h1 {
-          font-family: var(--font-ubuntu);
+          font-family: var(--font-poppins);
           font-weight: 800;
           color: var(--text-color);
           font-size: 2.6rem;
@@ -83,7 +83,7 @@
         }
 
         h3 {
-          font-family: var(--font-ubuntu);
+          font-family: var(--font-poppins);
           font-weight: 800;
           color: var(--primary);
           text-transform: uppercase;
@@ -92,11 +92,11 @@
         }
 
         p {
-          font-family: var(--font-ubuntu);
-          font-weight: 100;
+          font-family: var(--font-poppins);
+          font-weight: 300;
           color: var(--text-color-light);
           line-height: 2rem;
-          font-size: 1.25rem;
+          font-size: 1.2rem;
           margin-bottom: 24px;
         }
       }
