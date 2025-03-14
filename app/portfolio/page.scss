@@ -96,6 +96,12 @@
           .cardOverlay {
             opacity: 1;
           }
+
+          @media (max-width: 300px) {
+            .cardOverlay {
+              opacity: 0;
+            }
+          }
         }
 
         h2 {
@@ -109,7 +115,7 @@
       }
 
       @media (max-width: 1400px) {
-        width: 90%;
+        width: 100%;
       }
   
       @media (max-width: 900px) {
@@ -120,6 +126,18 @@
       @media (max-width: 800px) {
         width: 90%;
       }
+
+      @media (max-width: 550px) {
+        width: 100%;
+      }
     }
+  }
+
+  @media (max-width: 550px) {
+    padding: 2rem 2rem 0;
+  }
+
+  @media (max-width: 400px) {
+    padding: 1rem 1rem 0;
   }
 }

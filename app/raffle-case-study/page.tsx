@@ -5,7 +5,7 @@ import { Tweet } from 'react-tweet'
 
 export default function RaffleCaseStudy() {
     return <>
-        <section className='raffleIntro'>
+        {/* <section className='raffleIntro'>
             <h1>A Raffle System</h1>
             <img src='/raffle.webp' alt='Raffle Cards' height={2635} width={1600} style={{aspectRatio: '2635/1600' }}/>
             <div className='introBox'>
@@ -97,6 +97,6 @@ export default function RaffleCaseStudy() {
                 <Tweet id="1698955981357772889" />
             </section>
         </div>
-        <ScrollToTop />
+        <ScrollToTop /> */}
     </>
 }
