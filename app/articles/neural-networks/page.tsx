@@ -203,7 +203,7 @@ export default function NeuralNetworkCaseStudy() {
                     The state-space changes per iteration (changing the landscape). The landscape in each batch has different local minimums (?)(small valleys, but more elevated than the global minimum valley). But as all of the batches are optimized, the differences are cancelled out, and the SGD is determined to converge to the global minimum, without getting stuck in local minimums.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    This requires an alternative optimizer, Mini-Batch Gradient Descent (MBGD). I won't go into the details, but it takes into account the loss of only the current batch to calculate the gradients. 
+                    This requires an alternative optimizer, Mini-Batch Gradient Descent (MBGD). I won&apos;t go into the details, but it takes into account the loss of only the current batch to calculate the gradients. 
                 </p>
                 <Image src='/CaseStudies/NeuralNetworks/Batches.gif' alt="Changing State-Space over Batches" width={893} height={500} style={{ aspectRatio: '893/500', width: '100%', height: '100%' }}/>
                 <p className='caption'>Changing State-Space over Batches</p>
