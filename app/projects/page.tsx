@@ -5,6 +5,6 @@ export const metadata: Metadata = {
   robots: "noindex, nofollow",
 };
 
-export default function DashboardPage() {
+export default function RedirectPage() {
   redirect("/portfolio");
 }

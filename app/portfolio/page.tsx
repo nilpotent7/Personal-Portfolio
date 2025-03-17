@@ -6,7 +6,7 @@ import Link from "next/link"
 import { useEffect } from "react";
 
 
-export default function RaffleCaseStudy() {
+export default function PortfolioPage() {
     useEffect(() => {
       if (typeof window !== "undefined") {
         const urlParams = new URLSearchParams(window.location.search);
@@ -90,7 +90,7 @@ export default function RaffleCaseStudy() {
                 <h1>Programming</h1>
 
                 <div className="projectTypeGrid">
-                    <Link href='' className='projectCard'>
+                    <Link href='/articles/neural-networks' className='projectCard'>
                         <img src='projects/NeuralNetwork.png'/>
                         <div className="cardOverlay">
                             <h2>Machine Learning</h2>
