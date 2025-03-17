@@ -53,7 +53,7 @@ export default function NeuralNetworkCaseStudy() {
 
                 <h3>NEURAL NETWORKS</h3>
                 <p>
-                    Neural networks are composed of interconnected neurons (also known as perceptrons). These neurons are the foundation of machine learning. The more neurons a network has, the more capable it is to learn complexity. (I'll expand on it later)
+                    Neural networks are composed of interconnected neurons (also known as perceptrons). These neurons are the foundation of machine learning. The more neurons a network has, the more capable it is to learn complexity. (I&apos;ll expand on it later)
                 </p>
                 <Image src='/CaseStudies/NeuralNetworks/NeuralNetwork.png' alt='Sample Neural Network' width={1920} height={696} style={{ aspectRatio: '1920/696', width: '100%', height: '100%' }}/>
                 <p className='caption'>Sample Neural Network</p>
@@ -125,7 +125,7 @@ export default function NeuralNetworkCaseStudy() {
                 </p>
                 <ModelViewer/>
                 <p style={{marginTop: '1rem'}}>
-                    In this 3D representation of all possibilities, we can see a landscape with a distinct "valley" in blue. This represents the target values that yield the least error. With that combination, we get the best approximation.
+                    In this 3D representation of all possibilities, we can see a landscape with a distinct &quot;valley&quot; in blue. This represents the target values that yield the least error. With that combination, we get the best approximation.
                     We cannot use this analysis technique for larger networks, especially when involving multiple layered neural networks because we would need hyper dimensional space to visualize this. The question then becomes how do we represent this technique mathematically.
                 </p>
                 <p style={{marginTop: '1rem'}}>
@@ -218,11 +218,11 @@ export default function NeuralNetworkCaseStudy() {
                     As discussed earlier, SGD computes the gradient of the neuron&apos;s function, and steps in that direction with a discrete step. This step is called the learning rate.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    If we decrease the learning rate over time, the network will theoretically be able to fine-tune the details of the function we're trying to approximate.
+                    If we decrease the learning rate over time, the network will theoretically be able to fine-tune the details of the function we&apos;re trying to approximate.
                     Decay too fast, the network will not be able to reach sufficient accuracy in expected time.
                     Decaying too quick, the network will keep overshooting the optimal values.
                     The commonly used decay functions are step decay, exponential decay, polynomial decay, cosine annealing, etc.
-                    Since we're using a larger learning rate in the beginning, the neural network converges faster.
+                    Since we&apos;re using a larger learning rate in the beginning, the neural network converges faster.
                 </p>
                 <Image src='/CaseStudies/NeuralNetworks/Decay.png' alt="Different Decay Functions" width={1920} height={751} style={{ aspectRatio: '1920/751', width: '100%', height: '100%' }}/>
                 <p className='caption'>Different Decay Functions</p>
@@ -239,7 +239,7 @@ export default function NeuralNetworkCaseStudy() {
 
                 <p style={{marginTop: '0.5rem'}}>
                     Other activations functions like ReLU or Leaky ReLu, have support for both negative and larger values, but input is still preferrable to be standardized.
-                    There are multiple methods of data standardization but thats a statistics discussion. So I'll only cover the Z-Score Standardization technique, which performs linear transformation on the data points such that they range from -1 to 1. Linear transformation means that relations between the inputs is not lost.
+                    There are multiple methods of data standardization but thats statistics. So I&apos;ll only cover the Z-Score Standardization technique, which performs linear transformation on the data points such that they range from -1 to 1. Linear transformation means that relations between the inputs is not lost.
                 </p>
                 <video src='/CaseStudies/NeuralNetworks/Transform.mp4' autoPlay loop muted playsInline width={2880} height={1080} style={{ aspectRatio: '2880/1080', width: '100%', height: '100%', marginTop: '1rem' }}/>
                 <p className='caption'>Linear vs Non Linear Transformation</p>
@@ -260,7 +260,7 @@ export default function NeuralNetworkCaseStudy() {
                     I trained a small neural network to recognize images of size 28x28 of handwritten digits. There are 2 hidden layers with 64 neurons each.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    The training dataset comes from one of the most famous datasets, the MNIST Dataset of 70,000 images. Its equivalent to "Hello World" of Machine Learning. The dataset is divided into a 60,000 images for training and 10,000 for loss analysis. This split is performed randomly to avoid introducing arbitrary bias.
+                    The training dataset comes from one of the most famous datasets, the MNIST Dataset of 70,000 images. Its equivalent to &quot;Hello World&quot; of Machine Learning. The dataset is divided into a 60,000 images for training and 10,000 for loss analysis. This split is performed randomly to avoid introducing arbitrary bias.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
                     The Neural Network uses SGD with a exponentially decaying learning rate, sigmoid activation function, and Z-Score standardized input. Here&apos;s a showcase:
@@ -294,7 +294,7 @@ export default function NeuralNetworkCaseStudy() {
                     You now have a solid foundation in Machine Learning and I hope this article sparked your curiosity to venture out on your own.
                 </p>
                 <p style={{marginTop: '1rem'}}>
-                    To close off the article, I'd like to mention a common saying that machine learning is just a rebrand of statistics. Underneath it all, its all maths. Always!
+                    To close off the article, I&apos;d like to mention a common saying that machine learning is just a rebrand of statistics. Underneath it all, its all maths. Always!
                 </p>
             </section>
             
