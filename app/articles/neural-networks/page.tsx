@@ -8,20 +8,20 @@ export default function NeuralNetworkCaseStudy() {
     return <>
         <section className='raffleIntro' style={{ marginTop: '2rem' }}>
             <h1>Machine Learning</h1>
-            <img src='/CaseStudies/NeuralNetworks/CoverArt.png' alt='Raffle Cards' height={2028} width={1080} style={{aspectRatio: '2028/1080', marginTop: '4rem' }}/>
+            <Image src='/CaseStudies/NeuralNetworks/CoverArt.png' alt='Neural Networks Cover Art' height={2028} width={1080} style={{aspectRatio: '2028/1080', marginTop: '4rem' }}/>
             <div className='introBox'>
-                <p>A detailed beginner's guide to Machine Learning</p>
+                <p>A detailed beginner&apos;s guide to Machine Learning</p>
             </div>
         </section>
         <div className='caseStudyWrapper'>
             <section>
                 <h3 style={{marginTop: '0'}}>REINVENTING THE WHEEL</h3>
                 <p>
-                    Building things from scratch teaches you a lot of 'under the hood' details which you would have otherwise missed which are invaluable for a core understanding. Here's what I learnt by implementing entire Neural Network model using only Python and Numpy.
+                    Building things from scratch teaches you a lot of &apos;under the hood&apos; details which you would have otherwise missed which are invaluable for a core understanding. Here&apos;s what I learnt by implementing entire Neural Network model using only Python and Numpy.
                 </p>
                 <h3>THE PROJECT</h3>
                 <p>
-                    Using only Python and NumPy, I've implemented a Neural Network and trained it to recognize Handwritten Digits from MNIST Dataset, with x accuracy.
+                    Using only Python and NumPy, I&apos;ve implemented a Neural Network and trained it to recognize Handwritten Digits from MNIST Dataset, with x accuracy.
                 </p>
                 <p>
                     Another Neural Network, English alphabets from a custom dataset with 48 typeface variations, 2 size variations per typeface, and 27 uppercase & lowercase English alphabets, with y accuracy.
@@ -38,7 +38,7 @@ export default function NeuralNetworkCaseStudy() {
 
                 <h4 style={{marginTop: '4rem'}}>Breakdown</h4>
                 <h2 style={{marginTop: '0'}}>Understanding Neural Networks</h2>
-                <p style={{marginTop: '0.5rem'}}> Before we get into the details, let's define some fundamental concepts from Machine Learning. </p>
+                <p style={{marginTop: '0.5rem'}}> Before we get into the details, let&apos;s define some fundamental concepts from Machine Learning. </p>
 
                 <h3>FUNCTIONS</h3>
                 <p>
@@ -61,7 +61,7 @@ export default function NeuralNetworkCaseStudy() {
                 <h3>THE NEURON</h3>
                 <p>
                     Neurons can basically be defined as a function that takes multiple input values, and produces a single output.
-                    Each connection to the neuron has an associated weight determining its importance or influence towards the output. Additionally, neurons also consist of a bias value which shifts the output. The result is then passed through an activation function which yields the neuron's final output.
+                    Each connection to the neuron has an associated weight determining its importance or influence towards the output. Additionally, neurons also consist of a bias value which shifts the output. The result is then passed through an activation function which yields the neuron&apos;s final output.
                 </p>
                 <Image src='/CaseStudies/NeuralNetworks/NeuronFunction.png' alt='Neuron as a Function' width={1662} height={117} style={{ aspectRatio: '1662/117', width: '100%', height: '100%' }}/>
                 <p className='caption'>Neuron as a Function</p>
@@ -111,7 +111,7 @@ export default function NeuralNetworkCaseStudy() {
                 <p className='caption'>Neural Network as a Function</p>
 
                 <p style={{marginTop: '1rem'}}>
-                    Given a list of sample inputs and their corresponding outputs (the dataset), without knowing the function, our goal is to tweak the parameters weight (w) and bias (b) such that function's ouput matches given output. In this simple example, we can treat the parameters as unknowns and manually solve the equation. But we need a systematic approach that scales well with larger neural networks.
+                    Given a list of sample inputs and their corresponding outputs (the dataset), without knowing the function, our goal is to tweak the parameters weight (w) and bias (b) such that function&apos;s ouput matches given output. In this simple example, we can treat the parameters as unknowns and manually solve the equation. But we need a systematic approach that scales well with larger neural networks.
                 </p>
                 <p style={{marginTop: '1rem'}}>
                     Instead, lets use a <b>state space</b>, which is a fancy word for plotting all possible combinations of weight and bias for analysis.
@@ -138,8 +138,8 @@ export default function NeuralNetworkCaseStudy() {
                     The most common optimizer is Stochastic Gradient Descent (or SGD). Instead of analyzing all possibilities (the entire state space), SGD only calculates the <b>slope</b> at the current position. This is given by the derivative of our function.
                     Derivative of a function is basically the slope of that function and tells us how the output will change with respect to a change in our inputs.
                 </p>
-                <Image src='/CaseStudies/NeuralNetworks/Derivative.png' alt="Neural Network Function's Derivative" width={1662} height={194} style={{ aspectRatio: '1662/194', width: '100%', height: '100%' }}/>
-                <p className='caption'>Neural Network Function's Derivative</p>
+                <Image src='/CaseStudies/NeuralNetworks/Derivative.png' alt="Neural Network Function&apos;s Derivative" width={1662} height={194} style={{ aspectRatio: '1662/194', width: '100%', height: '100%' }}/>
+                <p className='caption'>Neural Network Function&apos;s Derivative</p>
                 <div style={{ width: '100%', display: 'flex', flexDirection: 'row', gap: '2rem', marginTop: '2rem'}}>
                     <div style={{width: '50%'}}>
                         <video src='/CaseStudies/NeuralNetworks/SGD.mp4' autoPlay loop muted playsInline width={1000} height={1000} style={{ aspectRatio: '1', width: '100%', height: '100%' }}/>
@@ -215,7 +215,7 @@ export default function NeuralNetworkCaseStudy() {
 
                 <h3>LEARNING RATE</h3>
                 <p>
-                    As discussed earlier, SGD computes the gradient of the neuron's function, and steps in that direction with a discrete step. This step is called the learning rate.
+                    As discussed earlier, SGD computes the gradient of the neuron&apos;s function, and steps in that direction with a discrete step. This step is called the learning rate.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
                     If we decrease the learning rate over time, the network will theoretically be able to fine-tune the details of the function we're trying to approximate.
@@ -233,8 +233,8 @@ export default function NeuralNetworkCaseStudy() {
                 <p>
                     Most neural networks are used for classification, or otherwise with outputs ranging from -1 to 1. Applying same logic to inputs improves efficiency, allowing it to learn at a faster rate. This is because if the inputs are offset, the gradient at those points is vanished, which means the gradient at larger values is very low.
                 </p>
-                <Image src='/CaseStudies/NeuralNetworks/SigmoidPlot.png' alt="Sigmoid Function's Gradient" width={2880} height={1080} style={{ aspectRatio: '2880/1080', width: '100%', height: '100%' }}/>
-                <p className='caption'>Sigmoid Function's Gradient</p>
+                <Image src='/CaseStudies/NeuralNetworks/SigmoidPlot.png' alt="Sigmoid Function&apos;s Gradient" width={2880} height={1080} style={{ aspectRatio: '2880/1080', width: '100%', height: '100%' }}/>
+                <p className='caption'>Sigmoid Function&apos;s Gradient</p>
 
 
                 <p style={{marginTop: '0.5rem'}}>
@@ -263,7 +263,7 @@ export default function NeuralNetworkCaseStudy() {
                     The training dataset comes from one of the most famous datasets, the MNIST Dataset of 70,000 images. Its equivalent to "Hello World" of Machine Learning. The dataset is divided into a 60,000 images for training and 10,000 for loss analysis. This split is performed randomly to avoid introducing arbitrary bias.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    The Neural Network uses SGD with a exponentially decaying learning rate, sigmoid activation function, and Z-Score standardized input. Here's a showcase:
+                    The Neural Network uses SGD with a exponentially decaying learning rate, sigmoid activation function, and Z-Score standardized input. Here&apos;s a showcase:
                 </p>
 
                 <h3>Recognizing Alphabets in Different Typefaces</h3>

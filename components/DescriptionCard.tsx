@@ -1,6 +1,7 @@
 import '@/components/DescriptionCard.scss'
 import Socials from '@/components/socials'
 import OpenButton from '@/components/openButton'
+import Image from 'next/image'
 
 export default function DescriptionCard(
     { 
@@ -19,7 +20,7 @@ export default function DescriptionCard(
         <div className="descriptionCard">
             <div className='descriptionCardContent'>
                 <div className='descriptionCardMedia'>
-                    <img className='descriptionCardImage' src={imageSource} alt='Avatar' 
+                    <Image className='descriptionCardImage' src={imageSource} alt='Avatar' fill
                         style={
                             imageRounded ? {
                                 maxHeight: imageSize[0],
