@@ -35,22 +35,22 @@ export default function NeuralNetworkCaseStudy() {
             <section>
                 <h3 style={{marginTop: '0'}}>Reinventing the Wheel</h3>
                 <p>
-                    Building things from scratch teaches you a lot of &apos;under the hood&apos; details which you would have otherwise missed which are invaluable for a core understanding. Here&apos;s what I learnt by implementing entire Neural Network model using only Python and Numpy.
+                    Building things from scratch teaches you a lot of &apos;under the hood&apos; details, which you would have otherwise. These little details are invaluable for a deeper understanding. Here&apos;s what I learnt by implementing entire Neural Network model, using only Python & its library Numpy.
                 </p>
                 <h5 style={{marginTop: '2rem'}}>August 2023</h5>
                 <h3 style={{marginBottom: '0.5rem', marginTop: '0'}}>THE PROJECT</h3>
                 <p>
-                    Using only Python and NumPy, I&apos;ve implemented a Neural Network and trained it to recognize Handwritten Digits from MNIST Dataset, with <b>92.2% accuracy</b>.
+                    Using only Python & NumPy, I&apos;ve implemented a Neural Network, and trained it to recognize Handwritten Digits from MNIST Dataset, with <b>92.2% accuracy</b>.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    Another Neural Network, English alphabets from a custom dataset with 48 typeface variations, 2 size variations per typeface, and 27 uppercase & lowercase English alphabets, with <b>75.5% accuracy</b>.
+                    Another Neural Network is trained to recognize English alphabets, from a custom dataset with 48 typeface variations, 2 size variations per typeface, and 27 uppercase & lowercase English alphabets. It reached <b>75.5% accuracy</b> over little training.
                 </p>
                 <h3>THE ARTICLE</h3>
                 <p>
-                    Many resources demand a strong Calculus background for getting started with Machine Learning. While its certainly helpful, its not a strict requirement in my opinion. The key concepts of Calculus used in Machine Learning can indeed be explained without a deeper Calculus background.
+                    Many resources demand a strong Calculus background for getting started with Machine Learning. While its certainly helpful, its not a strict requirement in my opinion. The key concepts of Calculus used in Machine Learning, can indeed be explained without a deeper Calculus background.
                 </p>
                 <p>
-                    With this Case Study, I aim to explain what I learnt in an effective and simple manner.
+                    With this Case Study, I aim to explain what I learnt in an effective & simple manner.
                 </p>
             </section>
             <section>
@@ -79,8 +79,8 @@ export default function NeuralNetworkCaseStudy() {
 
                 <h3>THE NEURON</h3>
                 <p>
-                    Neurons can basically be defined as a function that takes multiple input values, and produces a single output.
-                    Each connection to the neuron has an associated weight determining its importance or influence towards the output. Additionally, neurons also consist of a bias value which shifts the output. The result is then passed through an activation function which yields the neuron&apos;s final output.
+                    Neurons can basically be defined as a function, that takes multiple input values, and produces a single output.
+                    Each connection to the neuron has an associated weight, determining its importance (influence towards the output). Additionally, neurons also consist of a bias value, which shifts the output. The result is then passed through an activation function, which yields the neuron&apos;s final output.
                 </p>
                 <Image src='/CaseStudies/NeuralNetworks/NeuronFunction.png' alt='Neuron as a Function' width={1662} height={117} style={{ aspectRatio: '1662/117', width: '100%', height: '100%' }}/>
                 <p className='caption'>Neuron as a Function</p>
@@ -93,7 +93,7 @@ export default function NeuralNetworkCaseStudy() {
                 <h2>Function Approximators</h2>
                 <p>
                     Neural Networks are essentially function approximators. Given a set of sample data (input & output), and without knowing the definition of the function, you can train a sufficient neural network to approximate it.
-                    Different types of functions require different structures for neural networks. A linear function can be learnt by a single-layer neural network but cannot learn a non-linear function, because the network itself only performs linear calculations.
+                    Different types of functions require different structures of neural networks. A <b>Linear Function</b> can be learnt by a single-layer neural network, but it cannot learn a non-linear function, because the network itself only performs linear calculations.
                     The best example of this phenomenon is the OR and XOR functions.
                 </p>
                 <p style={{marginTop: '1rem'}}>
@@ -104,7 +104,7 @@ export default function NeuralNetworkCaseStudy() {
                 <p className='caption'>Neural Network & OR Function</p>
 
                 <p style={{marginTop: '1rem'}}>
-                    However, the same network will be unable to learn the XOR function as its not <b>linearly separable</b>. A network with 2 layers will be able to learn the function as the neural network itself becomes non-linear.
+                    However, the same network won&apos;t be able to learn the XOR function, since its not <b>Linearly Separable</b>. A network with 2 layers can learn it, since the second layer introduces non-linearity to the network.
                 </p>
                 <Image src='/CaseStudies/NeuralNetworks/XORFunction.png' alt='Neural Network learns XOR Function' width={2515} height={1119} style={{ aspectRatio: '2515/1119', width: '100%', height: '100%' }}/>
                 <p className='caption'>Neural Network & XOR Function</p>
@@ -112,7 +112,7 @@ export default function NeuralNetworkCaseStudy() {
             <section>
                 <h2>Activation functions</h2>
                 <p>
-                    Activation functions are a core part of a neural networks. As explained earlier, non-linearity is important in a network so that it can approximate functions with increased complexity. Activation functions are the best way to add non-linearity to a neural network. The most commonly used activation functions are:
+                    Activation functions are a core part of neural networks. As explained earlier, non-linearity is important in a network, so that it can approximate functions with increased complexity. Activation functions are the best way to add non-linearity to a neural network. The most commonly used activation functions are:
                 </p>
                 <Image src='/CaseStudies/NeuralNetworks/Activation.png' alt='Common Activation Functions' width={1116} height={503} style={{ aspectRatio: '1116/503', width: '100%', height: '100%' }}/>
                 <p className='caption'>Common Activation Functions</p>
@@ -130,32 +130,32 @@ export default function NeuralNetworkCaseStudy() {
                 <p className='caption'>Neural Network as a Function</p>
 
                 <p style={{marginTop: '1rem'}}>
-                    Given a list of sample inputs and their corresponding outputs (the dataset), without knowing the function, our goal is to tweak the parameters weight (w) and bias (b) such that function&apos;s ouput matches given output. In this simple example, we can treat the parameters as unknowns and manually solve the equation. But we need a systematic approach that scales well with larger neural networks.
+                    Given a list of sample inputs & their corresponding outputs (the dataset), without knowing the function, our goal is to tweak the parameters weight (w) and bias (b) such that function&apos;s ouput matches given output. In this simple example, we can treat the parameters as unknowns, and manually solve the equation. But we need a systematic approach, which scales well with larger neural networks.
                 </p>
                 <p style={{marginTop: '1rem'}}>
-                    Instead, lets use a <b>state space</b>, which is a fancy word for plotting all possible combinations of weight and bias for analysis.
+                    Instead, lets use a <b>state space</b>, which is a fancy word for plotting all possible combinations of weights & biases for analysis.
                     Plotting weight on X-axis and bias on Y-axis, we get the following graph:
                 </p>
                 <Image src='/CaseStudies/NeuralNetworks/StateSpace.png' alt='Empty State Space' width={1920} height={975} style={{ aspectRatio: '1920/975', width: '100%', height: '100%' }}/>
                 <p className='caption'>Empty State Space</p>
 
                 <p style={{marginTop: '1rem'}}>
-                        Now we can fill the graph with a quantity known as <b>Cost</b>. The cost or loss of the neural network can be defined as the error amount in the output of the network and the desired output. Usually <b>Mean Squared Error</b> is used as a loss function. If we plot the loss for each combination of weight and bias, we get the following state space:
+                        Now, we can fill the graph with a quantity known as <b>loss</b>. It can be defined as the difference in the output of the network and the desired output. Usually <b>Mean Squared Error</b> is used as a loss function. If we plot the loss for each combination of weights & biases, we get the following state space:
                 </p>
                 <ModelViewer/>
                 <p style={{marginTop: '1rem'}}>
-                    In this 3D representation of all possibilities, we can see a landscape with a distinct &quot;valley&quot; in blue. This represents the target values that yield the least error. With that combination, we get the best approximation.
-                    We cannot use this analysis technique for larger networks, especially when involving multiple layered neural networks because we would need hyper dimensional space to visualize this. The question then becomes how do we represent this technique mathematically.
+                    In this 3D representation of all possibilities, we can see a landscape with a distinct &quot;valley&quot; in blue. This represents the target values, that yield the least error. With that combination, we get the best approximation.
+                    We cannot use this analysis technique for larger networks, especially when involving multiple layered neural networks, because we would need hyper dimensional space to visualize this. The question then becomes, how do we represent this technique mathematically.
                 </p>
                 <p style={{marginTop: '1rem'}}>
-                    Thats where Optimizers come in. These are functions which find the most optimal parameter values that yield the best approximation.
+                    Thats where Optimizers come in. These are functions which find the most optimal parameter values, that yield the best approximation.
                 </p>
             </section>
             <section>
                 <h2>Stochastic Gradient Descent</h2>
                 <p>
                     The most common optimizer is Stochastic Gradient Descent (or SGD). Instead of analyzing all possibilities (the entire state space), SGD only calculates the <b>slope</b> at the current position. This is given by the derivative of our function.
-                    Derivative of a function is basically the slope of that function and tells us how the output will change with respect to a change in our inputs.
+                    Derivative of a function is basically the slope of that function, and tells us how the output will change, with respect to a change in our inputs.
                 </p>
                 <Image src='/CaseStudies/NeuralNetworks/Derivative.png' alt="Neural Network Function&apos;s Derivative" width={1662} height={194} style={{ aspectRatio: '1662/194', width: '100%', height: '100%' }}/>
                 <p className='caption'>Neural Network Function&apos;s Derivative</p>
@@ -174,7 +174,7 @@ export default function NeuralNetworkCaseStudy() {
             <section>
                 <h2>Adam Optimizer</h2>
                 <p>
-                    Adam optimizer is an advanced optimization algorithm which improves upon SGD by adopting momentum gradient descent. Instead of stepping exactly the same amount in each time, it accumulates momentum from previous iterations. Adam optimizer is among the fastest optimizers.
+                    Adam optimizer is an advanced optimization algorithm, which improves upon SGD by adopting momentum gradient descent. Instead of stepping exactly the same amount in each time, it accumulates momentum from previous iterations. Adam optimizer is among the fastest optimizers.
                 </p>
                 <div style={{ width: '100%', display: 'flex', flexDirection: 'row', gap: '2rem'}}>
                     <div style={{width: '50%'}}>
@@ -193,7 +193,7 @@ export default function NeuralNetworkCaseStudy() {
                     <div style={{width: '60%'}}>
                         <h2>Evolution</h2>
                         <p>
-                            Another but relatively uncommon technique is the evolutionary algorithm, inspired by biological evolution. In each iteration, multiple samples of the current function are created and are called a <b>generation</b> combined.
+                            Another, but relatively uncommon technique, is the evolutionary algorithm, inspired by biological evolution. In each iteration, multiple samples of the current function are created, and are called a <b>generation</b> combined.
                             Each sample is then <b>mutated</b>, which means its parameters are randomly tweaked. The best sample from the generation is found by finding the one with minimal loss, which is selected for next iteration.
                         </p>
                     </div>
@@ -207,7 +207,7 @@ export default function NeuralNetworkCaseStudy() {
             <section>
                 <h2 style={{marginTop: '4rem'}}>Optimizing the Optimizers</h2>
                 <p>
-                    Lets discuss some standard techniques to optimize the learning of the Neural Network, in terms of learning speed, efficiency, accuracy.
+                    Lets discuss some standard techniques, which optimize the learning of the Neural Network, either in terms of learning speed, efficiency, or accuracy.
                 </p>
 
                 <h3>EPOCHS AND BATCHES</h3>
@@ -218,8 +218,8 @@ export default function NeuralNetworkCaseStudy() {
                 <p className='caption'>Traditional Training Approach</p>
 
                 <p style={{marginTop: '0.5rem'}}>
-                    Alternatively, the dataset can be divided into set of batches, and the neural network can be trained on each batch one at a time. Per iteration, the loss function is calculated only across the current batch. This is much faster than the traditional approach.
-                    The state-space changes per iteration (changing the landscape). The landscape in each batch has different local minimums (?)(small valleys, but more elevated than the global minimum valley). But as all of the batches are optimized, the differences are cancelled out, and the SGD is determined to converge to the global minimum, without getting stuck in local minimums.
+                    Alternatively, the dataset can be divided into set of batches, and the neural network can be trained on each batch, one at a time. Per iteration, the loss function is calculated only across the current batch. This is much faster than the traditional approach.
+                    The state-space changes per iteration (changing the landscape). The landscape in each batch has different local minimums (small valleys, but more elevated than the global minimum valley). But as all of the batches are optimized, the differences are cancelled out, and the SGD is determined to converge to the global minimum, without getting stuck in local minimums.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
                     This requires an alternative optimizer, Mini-Batch Gradient Descent (MBGD). I won&apos;t go into the details, but it takes into account the loss of only the current batch to calculate the gradients. 
@@ -237,7 +237,7 @@ export default function NeuralNetworkCaseStudy() {
                     As discussed earlier, SGD computes the gradient of the neuron&apos;s function, and steps in that direction with a discrete step. This step is called the learning rate.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    If we decrease the learning rate over time, the network will theoretically be able to fine-tune the details of the function we&apos;re trying to approximate.
+                    If we decrease the learning rate over time, the network will, theoretically, be able to fine-tune the details of the function we&apos;re trying to approximate.
                     Decay too fast, the network will not be able to reach sufficient accuracy in expected time.
                     Decaying too quick, the network will keep overshooting the optimal values.
                     The commonly used decay functions are step decay, exponential decay, polynomial decay, cosine annealing, etc.
@@ -257,8 +257,8 @@ export default function NeuralNetworkCaseStudy() {
 
 
                 <p style={{marginTop: '0.5rem'}}>
-                    Other activations functions like ReLU or Leaky ReLu, have support for both negative and larger values, but input is still preferrable to be standardized.
-                    There are multiple methods of data standardization but thats statistics. So I&apos;ll only cover the Z-Score Standardization technique, which performs linear transformation on the data points such that they range from -1 to 1. Linear transformation means that relations between the inputs is not lost.
+                    Other activations functions like ReLU or Leaky ReLu, have support for both negative & larger values, but input is still preferrable to be standardized.
+                    There are multiple methods of data standardization, but thats statistics. So I&apos;ll only cover the Z-Score Standardization technique, which performs linear transformation on the data points such that they range from -1 to 1. Linear transformation means that relations between the inputs is not lost.
                 </p>
                 <video src='/CaseStudies/NeuralNetworks/Transform.mp4' autoPlay loop muted playsInline width={2880} height={1080} style={{ aspectRatio: '2880/1080', width: '100%', height: '100%', marginTop: '1rem' }}/>
                 <p className='caption'>Linear vs Non Linear Transformation</p>
@@ -276,10 +276,10 @@ export default function NeuralNetworkCaseStudy() {
 
                 <h3>Recognizing Handwritten Digits</h3>
                 <p>
-                    I trained a small neural network to recognize images of size 28x28 of handwritten digits. There are 2 hidden layers with 64 neurons each.
+                    I trained a small neural network, to recognize images of size 28x28 of handwritten digits. There are 2 hidden layers with 64 neurons each.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    The training dataset comes from one of the most famous datasets, the MNIST Dataset of 70,000 images. Its equivalent to &quot;Hello World&quot; of Machine Learning. The dataset is divided into a 60,000 images for training and 10,000 for loss analysis. This split is performed randomly to avoid introducing arbitrary bias.
+                    The training dataset comes from one of the most famous datasets, the MNIST Dataset of 70,000 images. Its sometimes called &quot;Hello World&quot; of Machine Learning. The dataset is divided into a 60,000 images for training, and 10,000 for testing (loss analysis). This split is performed randomly to avoid introducing arbitrary bias.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
                     The Neural Network uses SGD with a exponentially decaying learning rate, sigmoid activation function, and Z-Score standardized input. Here&apos;s a showcase:
@@ -290,7 +290,7 @@ export default function NeuralNetworkCaseStudy() {
                     I also trained another neural network to recognize English alphabets with different fonts image of size 50x50.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    The dataset is generated using Python script. With 48 font supplied, a dataset of 70,0000+ images (225mb) is generated with 2 size variations per font for each 27 uppercase & lowercase English alphabet. The dataset is split 80-20% for training and testing respectively.
+                    The dataset is generated using Python script. With 48 font supplied, a dataset of 70,0000+ images (225mb) is generated with 2 size variations per font for each 27 uppercase & lowercase English alphabet. The dataset is split 80-20% for training and testing, respectively.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
                     The Neural Network used SGD with a exponentially decaying learning rate, sigmoid activation function, and Z-Score standardized of input.
@@ -298,7 +298,7 @@ export default function NeuralNetworkCaseStudy() {
 
                 <h3>Source Code</h3>
                 <p>
-                    Source code for both networks and dataset generator script is available on <Link href='https://github.com/nilpotent7/Machine-Learning' style={{ 
+                    Source code for both networks, and dataset generator script is available on <Link href='https://github.com/nilpotent7/Machine-Learning' style={{ 
                         textDecoration: 'underline', color: 'var(--secondary-hover)'
                     }}>GitHub</Link>.
                 </p>
@@ -310,7 +310,7 @@ export default function NeuralNetworkCaseStudy() {
                     Machine Learning is a truly fascinating field. You can train a machine to perform any task. I plan to explore further by approximating 3D shapes with Machine Learning in an upcoming Case Study. Stay connected on my socials for updates.
                 </p>
                 <p>
-                    You now have a solid foundation in Machine Learning and I hope this article sparked your curiosity to venture out on your own.
+                    You now have a solid foundation in Machine Learning, and I hope this article sparked your curiosity to venture out on your own.
                 </p>
                 <p style={{marginTop: '1rem'}}>
                     To close off the article, I&apos;d like to mention a common saying that machine learning is just a rebrand of statistics. Underneath it all, its all maths. Always!
