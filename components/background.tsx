@@ -41,9 +41,10 @@ function useWindowSize() {
 export default function Background() {
   
     const isArticle = usePathname().startsWith('/articles');
+    const isTEMP = usePathname().startsWith('/articles/raytracing');
     const size = useWindowSize();
     const [frame, setFrame] = useState(0);
-    const [text, setText] = useState(randomString(size.height * size.width * 0.01, isArticle));
+    const [text, setText] = useState(randomString(size.height * size.width * 0.01, isArticle || isTEMP));
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
@@ -92,16 +93,22 @@ export default function Background() {
             onMouseMove={handleMouseMove}
             
             style={
-              isArticle ? {
+              isTEMP ? {
                 backgroundColor: 'white',
-                WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.035))`,
-                maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.035))`,
-              } : {
-                WebkitBackgroundClip: 'text',
-                backgroundClip: 'text',
-                WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.35), rgba(0,0,0,0.035))`,
-                maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.35), rgba(0,0,0,0.035))`,
-              }
+                WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0), rgba(0,0,0,0))`,
+                maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0), rgba(0,0,0,0))`,
+              } : (
+                isArticle ? {
+                  backgroundColor: 'white',
+                  WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.035))`,
+                  maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.1), rgba(0,0,0,0.035))`,
+                } : {
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.35), rgba(0,0,0,0.035))`,
+                  maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0.35), rgba(0,0,0,0.035))`,
+                }
+              )
             }
         >
             {text}

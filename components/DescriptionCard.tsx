@@ -1,18 +1,17 @@
 import '@/components/DescriptionCard.scss'
 import Socials from '@/components/socials'
 import OpenButton from '@/components/openButton'
-import Image from 'next/image'
 
 export default function DescriptionCard(
     { 
         addButton, buttonText, buttonLink, addSocials,
         imageSource, imageSize, imageRounded,
-        alignCenter: alignTextCenter, heading, text
+        alignCenter: alignTextCenter, heading, tagline, text
     }: 
     {
         addButton: boolean, buttonText: string, buttonLink: string, addSocials: boolean,
         imageSource: string, imageSize: Array<string>, imageRounded: boolean,
-        alignCenter: boolean, heading: string, text: JSX.Element
+        alignCenter: boolean, heading: string, tagline: string,  text: JSX.Element
 
     }
 ) {
@@ -20,7 +19,7 @@ export default function DescriptionCard(
         <div className="descriptionCard">
             <div className='descriptionCardContent'>
                 <div className='descriptionCardMedia'>
-                    <Image className='descriptionCardImage' src={imageSource} alt='Avatar' fill
+                    <img className='descriptionCardImage' src={imageSource} alt='Avatar'
                         style={
                             imageRounded ? {
                                 maxHeight: imageSize[0],
@@ -47,7 +46,14 @@ export default function DescriptionCard(
                     <div className="descriptionCardMainText" style={
                         alignTextCenter ? {textAlign: 'center'} : {}
                     }>
-                        <h1>{heading}</h1>
+                        {
+                            tagline == "" ? <>
+                                <h1 style={{marginBottom: '24px'}}>{heading}</h1>
+                            </> : <>
+                                <h1>{heading}</h1>
+                                <h3 style={{marginBottom: '24px'}}>{tagline}</h3>
+                            </>
+                        }
                         {text}
                     </div>
                         {

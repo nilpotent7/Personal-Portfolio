@@ -1,12 +1,12 @@
 import '@/app/articles/neural-networks/page.scss'
-import Image from 'next/image'
 import ScrollToTop from '@/components/scrollToTop'
 import ModelViewer from '@/components/modelViewer'
+import Image from 'next/image'
 import Link from "next/link"
 
 export default function NeuralNetworkCaseStudy() {
     return <>
-        <section className='raffleIntro' style={{ marginTop: '2rem' }}>
+        <section className='intro' style={{ marginTop: '2rem' }}>
             <h1>Machine Learning</h1>
             <Image src='/CaseStudies/NeuralNetworks/CoverArt.png' alt='Neural Networks Cover Art' height={2028} width={1080} style={{aspectRatio: '2028/1080', marginTop: '4rem' }}/>
             <div className='introBox'>
@@ -15,16 +15,16 @@ export default function NeuralNetworkCaseStudy() {
         </section>
         <div className='caseStudyWrapper'>
             <section>
-                <h3 style={{marginTop: '0'}}>REINVENTING THE WHEEL</h3>
+                <h3 style={{marginTop: '0'}}>Reinventing the Wheel</h3>
                 <p>
                     Building things from scratch teaches you a lot of &apos;under the hood&apos; details which you would have otherwise missed which are invaluable for a core understanding. Here&apos;s what I learnt by implementing entire Neural Network model using only Python and Numpy.
                 </p>
-                <h3>THE PROJECT</h3>
+                <h3>THE PROJECT • 2023</h3>
                 <p>
-                    Using only Python and NumPy, I&apos;ve implemented a Neural Network and trained it to recognize Handwritten Digits from MNIST Dataset, with x accuracy.
+                    Using only Python and NumPy, I&apos;ve implemented a Neural Network and trained it to recognize Handwritten Digits from MNIST Dataset, with <b>92.2% accuracy</b>.
                 </p>
-                <p>
-                    Another Neural Network, English alphabets from a custom dataset with 48 typeface variations, 2 size variations per typeface, and 27 uppercase & lowercase English alphabets, with y accuracy.
+                <p style={{marginTop: '0.5rem'}}>
+                    Another Neural Network, English alphabets from a custom dataset with 48 typeface variations, 2 size variations per typeface, and 27 uppercase & lowercase English alphabets, with <b>75.5% accuracy</b>.
                 </p>
                 <h3>THE ARTICLE</h3>
                 <p>

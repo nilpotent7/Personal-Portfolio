@@ -7,7 +7,7 @@ export default function Navbar() {
             <ul>
                 <li><a href='/'>Home</a></li>
                 <li><a href='/portfolio'>Portfolio</a></li>
-                <li><a href='mailto:invalidmail07@gmail.com'>Contact</a></li>
+                <li><a href='https://github.com/nilpotent7'>GitHub</a></li>
             </ul>
         </nav>
     </>

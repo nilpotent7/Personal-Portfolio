@@ -47,7 +47,7 @@ export default function PortfolioPage() {
                         </div>
                     </Link> */}
 
-                    <Link href='' className='projectCard'>
+                    <Link href='/projects/chronostrike' className='projectCard'>
                         <Image src='/projects/ChronoStrike.png' alt='ChronoStrike Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>Chronostrike</h2>
@@ -55,7 +55,7 @@ export default function PortfolioPage() {
                         </div>
                     </Link>
 
-                    <Link href='' className='projectCard'>
+                    <Link href='/projects/glued-together' className='projectCard'>
                         <Image src='/projects/GluedTogether.png' alt='GluedTogether Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>Glued Together</h2>
@@ -99,7 +99,7 @@ export default function PortfolioPage() {
                         </div>
                     </Link>
 
-                    <Link href='' className='projectCard'>
+                    <Link href='/articles/raytracing' className='projectCard'>
                         <Image src='/projects/Raytracer.png' alt='Raytracer Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>Raytracing</h2>

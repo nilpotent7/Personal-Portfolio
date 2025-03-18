@@ -40,7 +40,7 @@ export default function HauntedSewer() {
             ]}/>
         </section>
         <section className='aboutArtwork'>
-            <DescriptionCard addButton={true} buttonText="View All Artworks" buttonLink="/portfolio?hook=artworks" addSocials={false} imageSource="/projects/HauntedSewer/Extra.png" imageSize={["600px", "720px"]} imageRounded={false} alignCenter={true} heading="Haunted Sewer" text={
+            <DescriptionCard addButton={true} buttonText="View All Artworks" buttonLink="/portfolio?hook=artworks" addSocials={false} imageSource="/projects/HauntedSewer/Extra.png" imageSize={["600px", "720px"]} imageRounded={false} alignCenter={true} heading="Haunted Sewer" tagline="October 2024" text={
                 <>
                     <p>Abandonded sewerage system rumoured to be connected with dark rituals</p>
                     <p>My first attempt at photorealism. Developed in Unity HDRP with Quixel assets over a period of about 2 weeks</p>

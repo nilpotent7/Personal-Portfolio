@@ -46,7 +46,7 @@ export default function GasStation() {
             ]}/>
         </section>
         <section className='aboutArtwork'>
-            <DescriptionCard addButton={true} buttonText="View All Artworks" buttonLink="/portfolio?hook=artworks" addSocials={false} imageSource="/projects/GasStation/Extra.png" imageSize={["600px", "720px"]} imageRounded={false} alignCenter={true} heading="Gas Station" text={
+            <DescriptionCard addButton={true} buttonText="View All Artworks" buttonLink="/portfolio?hook=artworks" addSocials={false} imageSource="/projects/GasStation/Extra.png" imageSize={["600px", "720px"]} imageRounded={false} alignCenter={true} heading="Gas Station" tagline='December 2024' text={
                 <>
                     <p>The only gas station in the middle of vast wilderness</p>
                     <p>Developed in Unity HDRP with Quixel assets over a period of about 3 weeks</p>
