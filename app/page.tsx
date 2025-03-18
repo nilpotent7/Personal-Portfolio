@@ -2,6 +2,7 @@ import '@/app/page.scss'
 import OpenButton from '@/components/openButton'
 import DescriptionCard from '@/components/DescriptionCard'
 import Link from "next/link"
+import Image from 'next/image'
 
 export default function Home() {
     
@@ -19,7 +20,7 @@ export default function Home() {
                 <>
                     <p>Hello :D<br/>I&apos;m Behroz K. aka Nilpotent</p>
                     <p>I&apos;m a self-taught Game Developer & Programmer.</p>
-                    <p>I&apos;m a student who began game development at the age of 9. Over the eight years, I&apos;ve worked with <b>Neural Networks</b>, <b>Sentimental Analysis</b>, <b>GPU Programming</b>, <b>Compute Shaders</b>, <b>Rendering Algorithms</b>, <b>Network Programming</b>, and more.</p>
+                    <p>I&apos;m a student who began game development at the age of 9. Over the eight years, I&apos;ve worked with <b>Machine Learning</b>, <b>Sentimental Analysis</b>, <b>GPU Programming</b>, <b>Compute Shaders</b>, <b>Rendering Algorithms</b>, <b>Network Programming</b>, and more.</p>
                 </>
             }/>
         </section>
@@ -33,14 +34,15 @@ export default function Home() {
                 <Link href='/projects/chronostrike' className='projectCard' style={{backgroundImage: "url('projects/ChronoStrike.png')"}}>
                     <div className="cardOverlay">
                         <h2>Chronostrike</h2>
-                        <p>3D Endless Shooter made in 7 days</p>
+                        <p>3D Endless Shooter game made in 7 days</p>
                     </div>
                 </Link>
 
-                <Link href='/projects/glued-together' className='projectCardEnd' style={{backgroundImage: "url('projects/GluedTogether.png')"}}>
+                <Link href='/projects/gas-station' className='projectCard'>
+                    <Image src='/projects/GasStation.png' alt='GasStation Artwork' fill/>
                     <div className="cardOverlay">
-                        <h2>Glued Together</h2>
-                        <p>Top Down Puzzler made with a team in 7 days</p>
+                        <h2>Gas Station</h2>
+                        <p>The only gas station in the middle of vast wilderness</p>
                     </div>
                 </Link>
             </div>

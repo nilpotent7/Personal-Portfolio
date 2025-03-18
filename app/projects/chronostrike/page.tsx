@@ -2,6 +2,25 @@ import '@/app/projects/gas-station/page.scss'
 import { Carousel } from '@/components/carousel'
 import DescriptionCard from '@/components/DescriptionCard'
 
+export const metadata = {
+    metadataBase: new URL("https://nilpotent.vercel.app"),
+    title: 'ChronoStrike | Behroz Khan',
+    description: '3D Endless Shooter game made by Behroz Khan',
+    openGraph: {
+        title: 'ChronoStrike | Behroz Khan',
+        description: '3D Endless Shooter game made by Behroz Khan',
+        type: 'website',
+        images: [
+            {
+                url: '/projects/ChronoStrike/CoverArt.png',
+                width: 3840,
+                height: 2160,
+            },
+        ],
+    },
+  }
+
+
 export default function GasStation() {
     return <>
         <section className='slideshow'>

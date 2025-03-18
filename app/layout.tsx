@@ -10,10 +10,10 @@ const jetbrainsMono = JetBrains_Mono({ weight: ['100', '200', '300', '400', '500
 
 export const metadata = {
   metadataBase: new URL("https://nilpotent.vercel.app"),
-  title: 'Behroz Khan',
+  title: 'Behroz Khan | Portfolio',
   description: 'Passionate Game Developer | Turning dreams into reality.',
   openGraph: {
-      title: 'Behroz Khan',
+      title: 'Behroz Khan | Portfolio',
       description: 'Passionate Game Developer | Turning dreams into reality',
       type: 'website',
       images: [

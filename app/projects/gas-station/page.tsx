@@ -2,6 +2,24 @@ import '@/app/projects/gas-station/page.scss'
 import { Carousel } from '@/components/carousel'
 import DescriptionCard from '@/components/DescriptionCard'
 
+export const metadata = {
+    metadataBase: new URL("https://nilpotent.vercel.app"),
+    title: 'Gas Station Artwork | Behroz Khan',
+    description: 'Artwork made in Unity HDRP with Quixel Assets by Behroz Khan',
+    openGraph: {
+        title: 'Gas Station Artwork | Behroz Khan',
+        description: 'Artwork made in Unity HDRP with Quixel Assets by Behroz Khan',
+        type: 'website',
+        images: [
+            {
+                url: '/projects/GasStation/Day.png',
+                width: 3840,
+                height: 2160,
+            },
+        ],
+    },
+  }
+
 export default function GasStation() {
     return <>
         <section className='slideshow'>

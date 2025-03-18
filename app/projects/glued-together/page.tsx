@@ -3,6 +3,24 @@ import { Carousel } from '@/components/carousel'
 import DescriptionCard from '@/components/DescriptionCard'
 import Link from 'next/link'
 
+export const metadata = {
+    metadataBase: new URL("https://nilpotent.vercel.app"),
+    title: 'Glued Together | Behroz Khan',
+    description: '3D Topdown Puzzle game made by Behroz Khan',
+    openGraph: {
+        title: 'Glued Together | Behroz Khan',
+        description: '3D Topdown Puzzle game made by Behroz Khan',
+        type: 'website',
+        images: [
+            {
+                url: '/projects/GluedTogether/CoverArt.png',
+                width: 1280,
+                height: 720,
+            },
+        ],
+    },
+  }
+
 export default function GasStation() {
     return <>
         <section className='slideshow'>

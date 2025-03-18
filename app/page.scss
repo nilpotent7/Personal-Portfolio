@@ -73,7 +73,7 @@
     justify-content: center;
     padding: 1rem;
 
-    img {
+    img, Image {
       width: 70%;
       height: auto;
       aspect-ratio: 1/1;
@@ -107,7 +107,7 @@
     justify-content: center;
     padding: 2rem;
 
-    img {
+    img, Image {
       width: 70%;
       height: auto;
       aspect-ratio: 1/1;
@@ -203,6 +203,12 @@
       background-position: center;
       background-clip: padding-box;
       transition: transform 200ms ease-in-out;
+      
+      img, Image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
 
       .cardOverlay {
         align-content: flex-end;

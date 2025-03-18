@@ -2,6 +2,24 @@ import '@/app/articles/raytracing/page.scss'
 import ScrollToTop from '@/components/scrollToTop'
 import Image from 'next/image'
 
+export const metadata = {
+    metadataBase: new URL("https://nilpotent.vercel.app"),
+    title: 'Raytracing Case Study | Behroz Khan',
+    description: 'A comprehensive case study into raytracing, rendering algorithm, GPU Compute, performance, and best practices.',
+    openGraph: {
+        title: 'Raytracing Case Study | Behroz Khan',
+        description: 'A comprehensive case study into raytracing, rendering algorithm, GPU Compute, performance, and best practices.',
+        type: 'website',
+        images: [
+            {
+                url: '/CaseStudies/NeuralNetworks/CoverArt.png',
+                width: 2048,
+                height: 1080,
+            },
+        ],
+    },
+  }
+
 export default function RaytracingCaseStudy() {
     return <>
         <section className='intro'>
@@ -19,9 +37,10 @@ export default function RaytracingCaseStudy() {
                     However, some of the less commonly used techniques include Raymarching & Raytracing. Despite being slow, these techniques have a lot more control. Only until recently has Raytracing picked up in popularity. 
                 </p>
 
-                <h3>THE PROJECT • 2024</h3>
+                <h5 style={{marginTop: '2rem'}}>May 2024</h5>
+                <h3 style={{marginBottom: '0.5rem', marginTop: '0'}}>THE PROJECT</h3>
                 <p>
-                    I developed a Raytracer which performs Monte-Carlo algorithm to render a beautiful & realistic depiction of a scene featuring accurate Global Illumination, Reflections, and Emission.
+                    I developed a Raytracer which performs Monte-Carlo approximation of light rays to render a beautiful & realistic depiction of a scene featuring accurate Global Illumination, Reflections, and Emission.
                     The Raytracer is implemented in Unity Engine with custom rendering pipeline using ComputeShader to perform calculations on the GPU.
                 </p>
 

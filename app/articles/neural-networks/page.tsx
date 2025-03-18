@@ -4,6 +4,24 @@ import ModelViewer from '@/components/modelViewer'
 import Image from 'next/image'
 import Link from "next/link"
 
+export const metadata = {
+    metadataBase: new URL("https://nilpotent.vercel.app"),
+    title: 'Machine Learning Case Study | Behroz Khan',
+    description: 'A comprehensive case study into machine learning, learning algorithms, and best practices.',
+    openGraph: {
+        title: 'Machine Learning Case Study | Behroz Khan',
+        description: 'A comprehensive case study into machine learning, learning algorithms, and best practices.',
+        type: 'website',
+        images: [
+            {
+                url: '/CaseStudies/NeuralNetworks/CoverArt.png',
+                width: 2048,
+                height: 1080,
+            },
+        ],
+    },
+  }
+
 export default function NeuralNetworkCaseStudy() {
     return <>
         <section className='intro' style={{ marginTop: '2rem' }}>
@@ -19,7 +37,8 @@ export default function NeuralNetworkCaseStudy() {
                 <p>
                     Building things from scratch teaches you a lot of &apos;under the hood&apos; details which you would have otherwise missed which are invaluable for a core understanding. Here&apos;s what I learnt by implementing entire Neural Network model using only Python and Numpy.
                 </p>
-                <h3>THE PROJECT • 2023</h3>
+                <h5 style={{marginTop: '2rem'}}>August 2023</h5>
+                <h3 style={{marginBottom: '0.5rem', marginTop: '0'}}>THE PROJECT</h3>
                 <p>
                     Using only Python and NumPy, I&apos;ve implemented a Neural Network and trained it to recognize Handwritten Digits from MNIST Dataset, with <b>92.2% accuracy</b>.
                 </p>
