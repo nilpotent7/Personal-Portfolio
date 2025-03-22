@@ -14,9 +14,9 @@ export const metadata = {
         type: 'website',
         images: [
             {
-                url: '/CaseStudies/NeuralNetworks/CoverArt.png',
-                width: 2048,
-                height: 1080,
+                url: '/CaseStudies/NeuralNetworks/OpenGraph.png',
+                width: 1024,
+                height: 1024,
             },
         ],
     },
