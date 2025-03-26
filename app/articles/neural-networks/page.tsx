@@ -122,7 +122,7 @@ export default function NeuralNetworkCaseStudy() {
 
                 <h3 style={{marginTop: '1rem'}}>SOFTMAX FUNCTION</h3>
                 <p>
-                    Softmax activation function is unique. It converts continuous values into a probability distribution, which is used for classification Neural Networks and Transformers for predictions.
+                    Softmax activation function is a unique activation function. It converts continuous values into a probability distribution, which is used for classification Neural Networks and Transformers for predictions.
                 </p>
             </section>
             <section>
@@ -287,7 +287,7 @@ export default function NeuralNetworkCaseStudy() {
                     The training dataset comes from one of the most famous datasets, the MNIST Dataset of 70,000 images. Its sometimes called &quot;Hello World&quot; of Machine Learning. The dataset is divided into a 60,000 images for training, and 10,000 for testing (loss analysis). This split is performed randomly to avoid introducing arbitrary bias.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    The Neural Network uses SGD with a exponentially decaying learning rate, sigmoid activation function, and Z-Score standardized input. Here&apos;s a showcase:
+                    The Neural Network uses SGD with a exponentially decaying learning rate, sigmoid activation function, and Z-Score standardized input.
                 </p>
 
                 <h3>Recognizing Alphabets in Different Typefaces</h3>
