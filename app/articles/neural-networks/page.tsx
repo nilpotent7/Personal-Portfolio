@@ -40,10 +40,10 @@ export default function NeuralNetworkCaseStudy() {
                 <h5 style={{marginTop: '2rem'}}>August 2023</h5>
                 <h3 style={{marginBottom: '0.5rem', marginTop: '0'}}>THE PROJECT</h3>
                 <p>
-                    Using only Python & NumPy, I&apos;ve implemented a Neural Network, and trained it to recognize Handwritten Digits from MNIST Dataset, with <b>92.2% accuracy</b>.
+                    Using only Python & NumPy, I&apos;ve implemented a Neural Network, and trained it to recognize Handwritten Digits from MNIST Dataset. It reached <b>94.8% accuracy</b> within 4 minutes of training.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    Another Neural Network is trained to recognize English alphabets, from a custom dataset with 48 typeface variations, 2 size variations per typeface, and 27 uppercase & lowercase English alphabets. It reached <b>75.5% accuracy</b> over little training.
+                    Another Neural Network is trained to recognize English alphabets, from a custom dataset with 48 typeface variations, 2 size variations per typeface, and 27 uppercase & lowercase English alphabets. It reached <b>75.5% accuracy</b> within 30 minutes of training.
                 </p>
                 <h3>THE ARTICLE</h3>
                 <p>
@@ -86,7 +86,7 @@ export default function NeuralNetworkCaseStudy() {
                 <p className='caption'>Neuron as a Function</p>
 
                 <p style={{marginTop:'1rem'}}>
-                    Common activation functions are <b>Sigmoid</b>, <b>tanh</b>, and <b>ReLu</b>. This will be explained in detail later. For now, you can think of the activation function as sensitivity of the neuron.
+                    Common activation functions are <b>Sigmoid</b>, <b>Tanh</b>, and <b>ReLU</b>. This will be explained in detail later. For now, you can think of the activation function as sensitivity of the neuron.
                 </p>
             </section>
             <section>
@@ -119,6 +119,11 @@ export default function NeuralNetworkCaseStudy() {
 
                 <Image src='/CaseStudies/NeuralNetworks/ActivationPlot.png' alt='Graph of Activation Functions Network' width={2880} height={1080} style={{ aspectRatio: '1920/696', width: '100%', height: '100%' }}/>
                 <p className='caption'>Graph of Activation Functions</p>
+
+                <h3 style={{marginTop: '1rem'}}>SOFTMAX FUNCTION</h3>
+                <p>
+                    Softmax activation function is unique. It converts continuous values into a probability distribution, which is used for classification Neural Networks and Transformers for predictions.
+                </p>
             </section>
             <section>
                 <h4 style={{marginTop: '4rem'}}>Optimizers</h4>
@@ -257,7 +262,7 @@ export default function NeuralNetworkCaseStudy() {
 
 
                 <p style={{marginTop: '0.5rem'}}>
-                    Other activations functions like ReLU or Leaky ReLu, have support for both negative & larger values, but input is still preferrable to be standardized.
+                    Other activations functions like ReLU or Leaky ReLU, have support for both negative & larger values, but input is still preferrable to be standardized.
                     There are multiple methods of data standardization, but thats statistics. So I&apos;ll only cover the Z-Score Standardization technique, which performs linear transformation on the data points such that they range from -1 to 1. Linear transformation means that relations between the inputs is not lost.
                 </p>
                 <video src='/CaseStudies/NeuralNetworks/Transform.mp4' autoPlay loop muted playsInline width={2880} height={1080} style={{ aspectRatio: '2880/1080', width: '100%', height: '100%', marginTop: '1rem' }}/>
