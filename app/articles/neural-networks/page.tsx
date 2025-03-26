@@ -122,7 +122,7 @@ export default function NeuralNetworkCaseStudy() {
 
                 <h3 style={{marginTop: '1rem'}}>SOFTMAX FUNCTION</h3>
                 <p>
-                    Softmax activation function is a unique activation function. It converts continuous values into a probability distribution, which is used for classification Neural Networks and Transformers for predictions.
+                    Softmax is a unique activation function. It converts continuous values into a probability distribution, which is used for classification Neural Networks and Transformers for predictions.
                 </p>
             </section>
             <section>
@@ -287,7 +287,7 @@ export default function NeuralNetworkCaseStudy() {
                     The training dataset comes from one of the most famous datasets, the MNIST Dataset of 70,000 images. Its sometimes called &quot;Hello World&quot; of Machine Learning. The dataset is divided into a 60,000 images for training, and 10,000 for testing (loss analysis). This split is performed randomly to avoid introducing arbitrary bias.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    The Neural Network uses SGD with a exponentially decaying learning rate, sigmoid activation function, and Z-Score standardized input.
+                    The Neural Network uses SGD with a exponentially decaying learning rate, Sigmoid activation function for hidden layers, and Softmax function for output layer, and Z-Score standardized input.
                 </p>
 
                 <h3>Recognizing Alphabets in Different Typefaces</h3>
@@ -298,7 +298,7 @@ export default function NeuralNetworkCaseStudy() {
                     The dataset is generated using Python script. With 48 font supplied, a dataset of 70,0000+ images (225mb) is generated with 2 size variations per font for each 27 uppercase & lowercase English alphabet. The dataset is split 80-20% for training and testing, respectively.
                 </p>
                 <p style={{marginTop: '0.5rem'}}>
-                    The Neural Network used SGD with a exponentially decaying learning rate, sigmoid activation function, and Z-Score standardized of input.
+                    The Neural Network used SGD with a exponentially decaying learning rate, Sigmoid activation function for hidden layers, and Softmax function for output layer, and Z-Score standardized of input.
                 </p>
 
                 <h3>Source Code</h3>
