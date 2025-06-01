@@ -25,31 +25,31 @@ export default function HauntedSewer() {
         <section className='slideshow'>
             <Carousel slides={[
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/HauntedSewer/LeftNoon.png",
                     alt: "Haunted Sewer Artwork Shot 1 Noon",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/HauntedSewer/LeftSunset.png",
                     alt: "Haunted Sewer Artwork Shot 1 Sunset",
                 },
                 {
-                    video: true,
+                    type: 2,
                     size: ["100%", "100%"],
                     src: "/projects/HauntedSewer/Night.mp4",
                     alt: "Haunted Sewer Artwork Night Scene",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/HauntedSewer/RightNoon.png",
                     alt: "Haunted Sewer Artwork Shot 2 Noon",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/HauntedSewer/RightSunset.png",
                     alt: "Haunted Sewer Artwork Shot 2 Sunset",

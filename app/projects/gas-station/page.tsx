@@ -25,37 +25,37 @@ export default function GasStation() {
         <section className='slideshow'>
             <Carousel slides={[
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GasStation/Day.png",
                     alt: "Gas Station Artwork Shot 1 Day time",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GasStation/Smoggy.png",
                     alt: "Gas Station Artwork Shot 1 with Smoggy weather",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GasStation/Night.png",
                     alt: "Gas Station Artwork Shot 1 Night time",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GasStation/Night3.png",
                     alt: "Gas Station Artwork Shot 2 Night time",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GasStation/Day2.png",
                     alt: "Gas Station Artwork Shot 2 Day time",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GasStation/Night2.png",
                     alt: "Gas Station Artwork Shot 1 Night time",

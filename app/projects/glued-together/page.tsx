@@ -26,37 +26,37 @@ export default function GasStation() {
         <section className='slideshow'>
             <Carousel slides={[
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot1.png",
                     alt: "Screenshot 1",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot2.png",
                     alt: "Screenshot 2",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot3.png",
                     alt: "Screenshot 3",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot4.png",
                     alt: "Screenshot 4",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot5.png",
                     alt: "Screenshot 5",
                 },
                 {
-                    video: false,
+                    type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot6.png",
                     alt: "Screenshot 6",

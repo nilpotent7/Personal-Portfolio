@@ -4,9 +4,10 @@ import { useCallback, useEffect, useState, useRef } from "react"
 import useEmblaCarousel from "embla-carousel-react"
 import styles from "./carousel.module.scss"
 import { motion } from 'framer-motion'
+import ImageComparison from '@/components/image-comparison'
 
 type CarouselSlide = {
-  video: boolean
+  type: number
   size: Array<string>
   src: string
   alt: string
@@ -109,7 +110,7 @@ export const Carousel = ({ slides }: CarouselProps) => {
               >
                 <div className={styles.emblaSlideImgWrapper}>
                   {
-                    !slide.video ?
+                    slide.type == 0 ?
                     <>
                       <img
                         ref={(el) => (imageRefs.current[index] = el)}
@@ -123,7 +124,27 @@ export const Carousel = ({ slides }: CarouselProps) => {
                           }))
                         }}
                       />
-                    </> : <>
+                    </> : 
+                    slide.type == 1 ?
+                    <>
+                    <div style={{ 
+                        width: 'fit-content',
+                        maxWidth: '100%',
+                        height: 'min(80vh, 800px)', 
+                        position: 'relative',
+                        margin: '2rem auto'
+                    }}>
+                        <ImageComparison
+                            beforeImage="/projects/RingWorld/Shot 1 Original.png"
+                            afterImage="/projects/RingWorld/Shot 1.png"
+                            beforeAlt="Original Halo map"
+                            afterAlt="Remastered RingWorld"
+                            initialPosition={50}
+                        />
+                    </div>
+                    </>
+                    :
+                    <>
                       <video controls className='video' width={slide.size[0]} height={slide.size[1]} loop playsInline>
                           <source src={slide.src} type="video/mp4" />
                           {slide.alt}
@@ -131,7 +152,7 @@ export const Carousel = ({ slides }: CarouselProps) => {
                     </>
                   }
 
-                  {!slidesLoaded[index] && !slide.video && (
+                  {!slidesLoaded[index] && slide.type != 2 && (
                     <div className={styles.emblaSlideLoader}>
                       <div className={styles.emblaSlideLoaderSpinner}></div>
                     </div>
