@@ -3,7 +3,15 @@
 import React, { useState, useRef, useCallback, useEffect } from "react"
 import Image from "next/image"
 import styles from "./image-comparison.module.scss"
-import type { ImageComparisonProps } from "./image-comparison"
+
+export type ImageComparisonProps = {
+  beforeImage: string
+  afterImage: string
+  beforeAlt?: string
+  afterAlt?: string
+  initialPosition?: number
+  className?: string
+}
 
 export default function ImageComparison({
   beforeImage,
