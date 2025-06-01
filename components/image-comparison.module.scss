@@ -32,12 +32,6 @@
   width: auto;
   height: auto;
   object-fit: contain;
-
-  font-family: var(--font-poppins);
-  font-weight: 600;
-  color: var(--text-color);
-  font-size: 2.6rem;
-  line-height: 1.3;
 }
 
 .afterImage {
@@ -80,11 +74,21 @@
 .beforeLabel {
   top: 16px;
   left: 16px;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  line-height: 1.3;
 }
 
 .afterLabel {
   top: 16px;
   right: 16px;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  line-height: 1.3;
 }
 
 // Mobile optimizations
