@@ -64,6 +64,16 @@ export default function RingWorld() {
         <section className='comparison'>
             <div className='comparison-item'>
                 <ImageComparison
+                    beforeImage="/projects/RingWorld/Shot 4 Original.png"
+                    afterImage="/projects/RingWorld/Shot 4.png"
+                    beforeAlt="Original Halo map"
+                    afterAlt="Remastered RingWorld"
+                    initialPosition={50}
+                />
+            </div>
+            
+            <div className='comparison-item'>
+                <ImageComparison
                     beforeImage="/projects/RingWorld/Shot 1 Original.png"
                     afterImage="/projects/RingWorld/Shot 1.png"
                     beforeAlt="Original Halo map"
@@ -86,16 +96,6 @@ export default function RingWorld() {
                 <ImageComparison
                     beforeImage="/projects/RingWorld/Shot 3 Original.png"
                     afterImage="/projects/RingWorld/Shot 3.png"
-                    beforeAlt="Original Halo map"
-                    afterAlt="Remastered RingWorld"
-                    initialPosition={50}
-                />
-            </div>
-
-            <div className='comparison-item'>
-                <ImageComparison
-                    beforeImage="/projects/RingWorld/Shot 4 Original.png"
-                    afterImage="/projects/RingWorld/Shot 4.png"
                     beforeAlt="Original Halo map"
                     afterAlt="Remastered RingWorld"
                     initialPosition={50}
