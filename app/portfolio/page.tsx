@@ -31,7 +31,7 @@ export default function PortfolioPage() {
                 <h1>Games</h1>
 
                 <div className="projectTypeGrid">
-                    <Link href='' className='projectCard'>
+                    <Link href='/projects/the-juicer' className='projectCard'>
                         <Image src='/projects/TheJuicer2.png' alt='TheJuicer2 Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>The Juicer 2</h2>
@@ -39,7 +39,7 @@ export default function PortfolioPage() {
                         </div>
                     </Link>
 
-                    <Link href='' className='projectCard'>
+                    <Link href='/projects/gummy-jump' className='projectCard'>
                         <Image src='/projects/GummyJump.png' alt='GummyJump Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>Gummy Jump 2</h2>
