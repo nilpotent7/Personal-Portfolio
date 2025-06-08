@@ -38,11 +38,11 @@ export default function Home() {
                     </div>
                 </Link>
 
-                <Link href='/projects/gas-station' className='projectCard'>
-                    <Image src='/projects/GasStation.png' alt='GasStation Artwork' fill/>
+                <Link href='/projects/ringworld' className='projectCard'>
+                    <Image src='/projects/RingWorld.png' alt='RingWorld Artwork' fill/>
                     <div className="cardOverlay">
-                        <h2>Gas Station</h2>
-                        <p>The only gas station in the middle of vast wilderness</p>
+                        <h2>RingWorld</h2>
+                        <p>An alien world on the surface of an unexplainable ring structure</p>
                     </div>
                 </Link>
             </div>
