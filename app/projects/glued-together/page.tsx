@@ -29,37 +29,37 @@ export default function GasStation() {
                     type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot1.png",
-                    alt: "Screenshot 1",
+                    alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot2.png",
-                    alt: "Screenshot 2",
+                    alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot3.png",
-                    alt: "Screenshot 3",
+                    alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot4.png",
-                    alt: "Screenshot 4",
+                    alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot5.png",
-                    alt: "Screenshot 5",
+                    alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
                     src: "/projects/GluedTogether/Screenshot6.png",
-                    alt: "Screenshot 6",
+                    alt: "In-game Screenshot",
                 },
                 
                 

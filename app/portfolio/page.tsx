@@ -31,21 +31,21 @@ export default function PortfolioPage() {
                 <h1>Games</h1>
 
                 <div className="projectTypeGrid">
-                    {/* <Link href='' className='projectCard'>
+                    <Link href='' className='projectCard'>
+                        <Image src='/projects/TheJuicer2.png' alt='TheJuicer2 Thumbnail' fill/>
                         <div className="cardOverlay">
-                            <Image src='/projects/TheJuicer2.png' alt='TheJuicer2 Thumbnail'/>
                             <h2>The Juicer 2</h2>
                             <p>3D Shooter with stylized graphics & arcade gameplay</p>
                         </div>
                     </Link>
 
                     <Link href='' className='projectCard'>
+                        <Image src='/projects/GummyJump.png' alt='GummyJump Thumbnail' fill/>
                         <div className="cardOverlay">
-                            <Image src='/projects/GummyJump.png' alt='GummyJump Thumbnail'/>
                             <h2>Gummy Jump 2</h2>
                             <p>2D Platformer with gritty graphics & precise movement</p>
                         </div>
-                    </Link> */}
+                    </Link>
 
                     <Link href='/projects/chronostrike' className='projectCard'>
                         <Image src='/projects/ChronoStrike.png' alt='ChronoStrike Thumbnail' fill/>
@@ -82,6 +82,14 @@ export default function PortfolioPage() {
                         <div className="cardOverlay">
                             <h2>Haunted Sewer</h2>
                             <p>Abandonded sewerage rumoured to be connected with dark rituals</p>
+                        </div>
+                    </Link>
+
+                    <Link href='/projects/ringworld' className='projectCard'>
+                        <Image src='/projects/RingWorld.png' alt='RingWorld Artwork' fill/>
+                        <div className="cardOverlay">
+                            <h2>RingWorld</h2>
+                            <p>An alien world on the surface of an unexplainable ring structure</p>
                         </div>
                     </Link>
                 </div>

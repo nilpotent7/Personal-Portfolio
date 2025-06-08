@@ -29,37 +29,37 @@ export default function GasStation() {
                     type: 0,
                     size: [],
                     src: "/projects/ChronoStrike/Purple.png",
-                    alt: "Screenshot 1",
+                    alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
                     src: "/projects/ChronoStrike/Orange.png",
-                    alt: "Screenshot 1",
+                    alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
                     src: "/projects/ChronoStrike/Reflection.png",
-                    alt: "Screenshot 1",
+                    alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
                     src: "/projects/ChronoStrike/Explosion.png",
-                    alt: "Screenshot 1",
+                    alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
                     src: "/projects/ChronoStrike/Corridor.png",
-                    alt: "Screenshot 1",
+                    alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
                     src: "/projects/ChronoStrike/Blue.png",
-                    alt: "Screenshot 1",
+                    alt: "In-game Screenshot",
                 },
                 
             ]}/>

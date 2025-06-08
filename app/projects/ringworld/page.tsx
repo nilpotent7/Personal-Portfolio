@@ -53,7 +53,7 @@ export default function RingWorld() {
             ]}/>
         </section>
         <section className='aboutArtwork'>
-            <DescriptionCard addButton={true} buttonText="View All Artworks" buttonLink="/portfolio?hook=artworks" addSocials={false} imageSource="/projects/RingWorld/Shot 4.png" imageSize={["1280px", "1000px"]} imageRounded={false} alignCenter={true} heading="RingWorld" tagline="June 2025" text={
+            <DescriptionCard addButton={true} buttonText="View All" buttonLink="/portfolio?hook=artworks" addSocials={false} imageSource="/projects/RingWorld/Shot 4.png" imageSize={["1280px", "1000px"]} imageRounded={false} alignCenter={true} heading="RingWorld" tagline="June 2025" text={
                 <>
                     <p>An alien world on the surface of an unexplainable ring structure</p>
                     <p>This is a complete remaster of a map from 2001 game, Halo. See comparison below. <br/>Developed in Unity HDRP with Quixel assets over a period of about a week</p>
