@@ -5,6 +5,7 @@ import useEmblaCarousel from "embla-carousel-react"
 import styles from "./carousel.module.scss"
 import { motion } from 'framer-motion'
 import ImageComparison from '@/components/image-comparison'
+import Image from 'next/image'
 
 type CarouselSlide = {
   type: number
@@ -112,7 +113,8 @@ export const Carousel = ({ slides }: CarouselProps) => {
                   {
                     slide.type == 0 ?
                     <>
-                      <img
+                      <Image width={3840/4} height={2160/4} unoptimized
+                      // <img
                         ref={(el) => (imageRefs.current[index] = el)}
                         className={styles.emblaSlideImg}
                         src={slide.src || "/placeholder.svg"}
@@ -135,8 +137,8 @@ export const Carousel = ({ slides }: CarouselProps) => {
                         margin: '2rem auto'
                     }}>
                         <ImageComparison
-                            beforeImage="/projects/RingWorld/Shot 1 Original.png"
-                            afterImage="/projects/RingWorld/Shot 1.png"
+                            beforeImage="/projects/RingWorld/Shot 1 Original.jpg"
+                            afterImage="/projects/RingWorld/Shot 1.jpg"
                             beforeAlt="Original Halo map"
                             afterAlt="Remastered RingWorld"
                             initialPosition={50}

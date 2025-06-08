@@ -32,7 +32,7 @@ export default function PortfolioPage() {
 
                 <div className="projectTypeGrid">
                     <Link href='/projects/the-juicer' className='projectCard'>
-                        <Image src='/projects/TheJuicer2.png' alt='TheJuicer2 Thumbnail' fill/>
+                        <Image src='/projects/TheJuicer2.jpg' alt='TheJuicer2 Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>The Juicer 2</h2>
                             <p>3D Shooter with stylized graphics & arcade gameplay</p>
@@ -40,7 +40,7 @@ export default function PortfolioPage() {
                     </Link>
 
                     <Link href='/projects/gummy-jump' className='projectCard'>
-                        <Image src='/projects/GummyJump.png' alt='GummyJump Thumbnail' fill/>
+                        <Image src='/projects/GummyJump.jpg' alt='GummyJump Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>Gummy Jump 2</h2>
                             <p>2D Platformer with gritty graphics & precise movement</p>
@@ -48,7 +48,7 @@ export default function PortfolioPage() {
                     </Link>
 
                     <Link href='/projects/chronostrike' className='projectCard'>
-                        <Image src='/projects/ChronoStrike.png' alt='ChronoStrike Thumbnail' fill/>
+                        <Image src='/projects/ChronoStrike.jpg' alt='ChronoStrike Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>Chronostrike</h2>
                             <p>3D Endless Shooter made in 7 days</p>
@@ -56,7 +56,7 @@ export default function PortfolioPage() {
                     </Link>
 
                     <Link href='/projects/glued-together' className='projectCard'>
-                        <Image src='/projects/GluedTogether.png' alt='GluedTogether Thumbnail' fill/>
+                        <Image src='/projects/GluedTogether.jpg' alt='GluedTogether Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>Glued Together</h2>
                             <p>Top Down Puzzler made with a team in 7 days</p>
@@ -70,7 +70,7 @@ export default function PortfolioPage() {
 
                 <div className="projectTypeGrid">
                     <Link href='/projects/gas-station' className='projectCard'>
-                        <Image src='/projects/GasStation.png' alt='GasStation Artwork' fill/>
+                        <Image src='/projects/GasStation.jpg' alt='GasStation Artwork' fill/>
                         <div className="cardOverlay">
                             <h2>Gas Station</h2>
                             <p>The only gas station in the middle of vast wilderness</p>
@@ -78,7 +78,7 @@ export default function PortfolioPage() {
                     </Link>
 
                     <Link href='/projects/haunted-sewer' className='projectCard'>
-                        <Image src='/projects/HauntedSewer.png' alt='HauntedSewer Artwork' fill/>
+                        <Image src='/projects/HauntedSewer.jpg' alt='HauntedSewer Artwork' fill/>
                         <div className="cardOverlay">
                             <h2>Haunted Sewer</h2>
                             <p>Abandonded sewerage rumoured to be connected with dark rituals</p>
@@ -86,7 +86,7 @@ export default function PortfolioPage() {
                     </Link>
 
                     <Link href='/projects/ringworld' className='projectCard'>
-                        <Image src='/projects/RingWorld.png' alt='RingWorld Artwork' fill/>
+                        <Image src='/projects/RingWorld.jpg' alt='RingWorld Artwork' fill/>
                         <div className="cardOverlay">
                             <h2>RingWorld</h2>
                             <p>An alien world on the surface of an unexplainable ring structure</p>
@@ -100,7 +100,7 @@ export default function PortfolioPage() {
 
                 <div className="projectTypeGrid">
                     <Link href='/articles/neural-networks' className='projectCard'>
-                        <Image src='/projects/NeuralNetwork.png' alt='NeuralNetwork Thumbnail' fill/>
+                        <Image src='/projects/NeuralNetwork.jpg' alt='NeuralNetwork Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>Machine Learning</h2>
                             <p>Neural Networks trained to classify handwritten digits & alphabets from typefaces</p>
@@ -108,7 +108,7 @@ export default function PortfolioPage() {
                     </Link>
 
                     <Link href='/articles/raytracing' className='projectCard'>
-                        <Image src='/projects/Raytracer.png' alt='Raytracer Thumbnail' fill/>
+                        <Image src='/projects/Raytracer.jpg' alt='Raytracer Thumbnail' fill/>
                         <div className="cardOverlay">
                             <h2>Raytracing</h2>
                             <p>Raytracer written as ComputeShader in Unity</p>

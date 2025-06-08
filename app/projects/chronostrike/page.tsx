@@ -12,7 +12,7 @@ export const metadata = {
         type: 'website',
         images: [
             {
-                url: '/projects/ChronoStrike/CoverArt.png',
+                url: '/projects/ChronoStrike/CoverArt.jpg',
                 width: 3840,
                 height: 2160,
             },
@@ -28,44 +28,44 @@ export default function GasStation() {
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/ChronoStrike/Purple.png",
+                    src: "/projects/ChronoStrike/Purple.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/ChronoStrike/Orange.png",
+                    src: "/projects/ChronoStrike/Orange.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/ChronoStrike/Reflection.png",
+                    src: "/projects/ChronoStrike/Reflection.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/ChronoStrike/Explosion.png",
+                    src: "/projects/ChronoStrike/Explosion.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/ChronoStrike/Corridor.png",
+                    src: "/projects/ChronoStrike/Corridor.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/ChronoStrike/Blue.png",
+                    src: "/projects/ChronoStrike/Blue.jpg",
                     alt: "In-game Screenshot",
                 },
                 
             ]}/>
         </section>
         <section className='aboutArtwork'>
-            <DescriptionCard addButton={true} buttonText="Play" buttonLink="https://nilpotent.itch.io/chronostrike" addSocials={false} imageSource="/projects/ChronoStrike/CoverArt.png" imageSize={["3840px", "2160px"]} imageRounded={false} alignCenter={true} heading="ChronoStrike" tagline='February 2023' text={
+            <DescriptionCard addButton={true} buttonText="Play" buttonLink="https://nilpotent.itch.io/chronostrike" addSocials={false} imageSource="/projects/ChronoStrike/CoverArt.jpg" imageSize={["3840px", "2160px"]} imageRounded={false} alignCenter={true} heading="ChronoStrike" tagline='February 2023' text={
                 <>
                     <p>
                         Explore procedurally generated environments with unique variations and layouts. 

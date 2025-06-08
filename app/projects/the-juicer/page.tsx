@@ -12,7 +12,7 @@ export const metadata = {
         type: 'website',
         images: [
             {
-                url: '/projects/TheJuicer/CoverArt.png',
+                url: '/projects/TheJuicer/CoverArt.jpg',
                 width: 3840,
                 height: 2160,
             },
@@ -28,61 +28,61 @@ export default function GasStation() {
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/TheJuicer/Screenshot1.png",
+                    src: "/projects/TheJuicer/Screenshot1.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/TheJuicer/Screenshot2.png",
+                    src: "/projects/TheJuicer/Screenshot2.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/TheJuicer/Screenshot3.png",
+                    src: "/projects/TheJuicer/Screenshot3.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/TheJuicer/Screenshot4.png",
+                    src: "/projects/TheJuicer/Screenshot4.jpg",
                     alt: "In-game Screenshot",
                 },    
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/TheJuicer/Screenshot5.png",
+                    src: "/projects/TheJuicer/Screenshot5.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/TheJuicer/Screenshot6.png",
+                    src: "/projects/TheJuicer/Screenshot6.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/TheJuicer/Screenshot7.png",
+                    src: "/projects/TheJuicer/Screenshot7.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/TheJuicer/Screenshot8.png",
+                    src: "/projects/TheJuicer/Screenshot8.jpg",
                     alt: "In-game Screenshot",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/TheJuicer/Screenshot9.png",
+                    src: "/projects/TheJuicer/Screenshot9.jpg",
                     alt: "In-game Screenshot",
                 },
             ]}/>
         </section>
         <section className='aboutArtwork'>
-            <DescriptionCard addButton={true} buttonText="View All" buttonLink="/portfolio?hook=games" addSocials={false} imageSource="/projects/TheJuicer/Extra.png" imageSize={["3840px", "2160px"]} imageRounded={false} alignCenter={true} heading="The Juicer 2" tagline='November 2024' text={
+            <DescriptionCard addButton={true} buttonText="View All" buttonLink="/portfolio?hook=games" addSocials={false} imageSource="/projects/TheJuicer/Extra.jpg" imageSize={["3840px", "2160px"]} imageRounded={false} alignCenter={true} heading="The Juicer 2" tagline='November 2024' text={
                 <>
                     <p>
                         3D Shooter with stylized graphics & arcade gameplay. 

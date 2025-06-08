@@ -12,7 +12,7 @@ export const metadata = {
         type: 'website',
         images: [
             {
-                url: '/projects/HauntedSewer/LeftNoon.png',
+                url: '/projects/HauntedSewer/LeftNoon.jpg',
                 width: 3840,
                 height: 2160,
             },
@@ -27,13 +27,13 @@ export default function HauntedSewer() {
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/HauntedSewer/LeftNoon.png",
+                    src: "/projects/HauntedSewer/LeftNoon.jpg",
                     alt: "Haunted Sewer Artwork Shot 1 Noon",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/HauntedSewer/LeftSunset.png",
+                    src: "/projects/HauntedSewer/LeftSunset.jpg",
                     alt: "Haunted Sewer Artwork Shot 1 Sunset",
                 },
                 {
@@ -45,23 +45,23 @@ export default function HauntedSewer() {
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/HauntedSewer/RightNoon.png",
+                    src: "/projects/HauntedSewer/RightNoon.jpg",
                     alt: "Haunted Sewer Artwork Shot 2 Noon",
                 },
                 {
                     type: 0,
                     size: [],
-                    src: "/projects/HauntedSewer/RightSunset.png",
+                    src: "/projects/HauntedSewer/RightSunset.jpg",
                     alt: "Haunted Sewer Artwork Shot 2 Sunset",
                 }
                 
             ]}/>
         </section>
         <section className='aboutArtwork'>
-            <DescriptionCard addButton={true} buttonText="View All" buttonLink="/portfolio?hook=artworks" addSocials={false} imageSource="/projects/HauntedSewer/Extra.png" imageSize={["600px", "720px"]} imageRounded={false} alignCenter={true} heading="Haunted Sewer" tagline="October 2024" text={
+            <DescriptionCard addButton={true} buttonText="View All" buttonLink="/portfolio?hook=artworks" addSocials={false} imageSource="/projects/HauntedSewer/Extra.jpg" imageSize={["600px", "720px"]} imageRounded={false} alignCenter={true} heading="Haunted Sewer" tagline="October 2024" text={
                 <>
                     <p>Abandonded sewerage system rumoured to be connected with dark rituals</p>
-                    <p>My first attempt at photorealism. Developed in Unity HDRP with Quixel assets over a period of about 2 weeks</p>
+                    <p>My first attempt at photorealism.<br/>Developed in Unity HDRP with Quixel assets over a period of about 2 weeks</p>
                 </>
             }/>
         </section>

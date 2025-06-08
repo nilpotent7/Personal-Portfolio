@@ -31,7 +31,7 @@ export default function Home() {
             </div>
 
             <div className="portfolioProjects">
-                <Link href='/projects/chronostrike' className='projectCard' style={{backgroundImage: "url('projects/ChronoStrike.png')"}}>
+                <Link href='/projects/chronostrike' className='projectCard' style={{backgroundImage: "url('projects/ChronoStrike.jpg')"}}>
                     <div className="cardOverlay">
                         <h2>Chronostrike</h2>
                         <p>3D Endless Shooter game made in 7 days</p>
@@ -39,7 +39,7 @@ export default function Home() {
                 </Link>
 
                 <Link href='/projects/ringworld' className='projectCard'>
-                    <Image src='/projects/RingWorld.png' alt='RingWorld Artwork' fill/>
+                    <Image src='/projects/RingWorld.jpg' alt='RingWorld Artwork' fill/>
                     <div className="cardOverlay">
                         <h2>RingWorld</h2>
                         <p>An alien world on the surface of an unexplainable ring structure</p>
