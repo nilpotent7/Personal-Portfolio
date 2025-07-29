@@ -65,8 +65,8 @@ export default function Geodyssey() {
                 <h3>Release Regions</h3>
                 <p>Worldwide</p>
 
-                <h3>Marketing Tagline</h3>
-                <p>Experience the Perplexing Impossible</p>
+                <h3>Store</h3>
+                <p><Link href='https://store.steampowered.com/app/3878850/Geodyssey/'>Available on Steam</Link></p>
 
                 {/* <h3>Website</h3>
                 <p>nilpotent.vercel.app/geodyssey</p> */}
