@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 4rem 0;
+  padding-top: 6rem;
 
   h1 {
     color: var(--text-color);
@@ -21,7 +22,6 @@
 
   .projectType {
     width: 100%;
-    margin-top: 50px;
     text-align: center;
   
     h1 {
@@ -114,27 +114,38 @@
         grid-column: 1 / -1;
       }
 
-      @media (min-width: 2250px) {
+      // Grid
+      @media (min-width: 2250px) and (max-width: 2250px) {
         width: 40%;
       }
 
-      @media (min-width: 1920px) and (max-width: 2250px) {
+      // Grid
+      @media (min-width: 2250px) {
         width: 50%;
       }
 
+      // Grid
+      @media (min-width: 1920px) and (max-width: 2250px) {
+        width: 70%;
+      }
+
+      // Not a Grid
       @media (max-width: 1400px) {
         width: 100%;
       }
   
+      // Grid
       @media (max-width: 900px) {
         grid-template-columns: 1fr;
         width: 80%;
       }
 
+      // Not a Grid
       @media (max-width: 800px) {
         width: 90%;
       }
 
+      // Not a Grid
       @media (max-width: 550px) {
         width: 100%;
       }
@@ -216,26 +227,38 @@
         }
       }
 
-      @media (min-width: 2250px) {
+      // Grid
+      @media (min-width: 2250px) and (max-width: 2250px) {
         width: 20%;
       }
 
-      @media (min-width: 1920px) and (max-width: 2250px) {
+      // Grid
+      @media (min-width: 2250px) {
         width: 25%;
       }
 
+      // Grid
+      @media (min-width: 1920px) and (max-width: 2250px) {
+        width: 35%;
+      }
+
+      // Grid
       @media (max-width: 1400px) {
         width: 50%;
       }
   
+      // Not a Grid
       @media (max-width: 900px) {
+        grid-template-columns: 1fr;
         width: 80%;
       }
 
+      // Not a Grid
       @media (max-width: 800px) {
         width: 90%;
       }
 
+      // Not a Grid
       @media (max-width: 550px) {
         width: 100%;
       }
