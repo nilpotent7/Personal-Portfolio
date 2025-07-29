@@ -1,6 +1,6 @@
 import '@/app/geodyssey/page.scss'
 import { Carousel } from '@/components/carousel'
-import DescriptionCard from '@/components/DescriptionCard'
+import CustomButton from '@/components/customButton'
 
 export const metadata = {
     metadataBase: new URL("https://nilpotent.vercel.app"),
@@ -117,40 +117,50 @@ export default function Geodyssey() {
             </div>
         </section>
 
-        <section className='slideshow'>
-            <Carousel slides={[
-                {
-                    type: 0,
-                    size: [],
-                    src: "/projects/Geodyssey/Screenshot1.png",
-                    alt: "In-game Screenshot",
-                },
-                {
-                    type: 0,
-                    size: [],
-                    src: "/projects/Geodyssey/Screenshot2.png",
-                    alt: "In-game Screenshot",
-                },
-                {
-                    type: 0,
-                    size: [],
-                    src: "/projects/Geodyssey/Screenshot3.png",
-                    alt: "In-game Screenshot",
-                },
-                {
-                    type: 0,
-                    size: [],
-                    src: "/projects/Geodyssey/Screenshot4.png",
-                    alt: "In-game Screenshot",
-                },
-                {
-                    type: 0,
-                    size: [],
-                    src: "/projects/Geodyssey/Screenshot5.png",
-                    alt: "In-game Screenshot",
-                }
-                
-            ]}/>
+        <section className='logoAssets'>
+            <div className='heading'>
+                <h1>Logos & Assets</h1>
+                <CustomButton
+                    title='Download' href='' arrowSpace={1}
+                    border={2} primary='#FF8A00' secondary='#FF4E00' text='var(--text-color)'
+                />
+            </div>
+            <div className='assets'>
+                <img src='/projects/Geodyssey/Logo.png' alt='Geodyssey Logo'/>
+                <img src='/projects/Geodyssey/HeaderCapsule.png' alt='Geodyssey Header Image'/>
+            </div>            
+        </section>
+
+        <section className='screenshotSection'>
+            <div className='heading'>
+                <h1>Screenshots</h1>
+                <CustomButton
+                    title='Download' href='' arrowSpace={1}
+                    border={2} primary='#FF8A00' secondary='#FF4E00' text='var(--text-color)'
+                />
+            </div>
+            <div className='screenshots'>
+                <img                
+                    src="/projects/Geodyssey/Screenshot1.png"
+                    alt="In-game Screenshot"
+                />
+                <img                
+                    src="/projects/Geodyssey/Screenshot2.png"
+                    alt="In-game Screenshot"
+                />
+                <img                
+                    src="/projects/Geodyssey/Screenshot3.png"
+                    alt="In-game Screenshot"
+                />
+                <img                
+                    src="/projects/Geodyssey/Screenshot4.png"
+                    alt="In-game Screenshot"
+                />
+                <img
+                    src="/projects/Geodyssey/Screenshot5.png"
+                    alt="In-game Screenshot"
+                />
+            </div>            
         </section>
     </>
 }

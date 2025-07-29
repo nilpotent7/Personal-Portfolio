@@ -45,14 +45,23 @@
 
 .written
 {
+  position: relative;
   display: flex;
   flex-direction: row;
-  margin: 5rem 25rem 5rem 25rem;
-  font-size: 0.9rem;
+  align-items: flex-start;
+  justify-self: center;
+  width: 80%;
+  z-index: 1;
+
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  gap: 1rem;
+
+  font-size: 1.5rem;
 
   .sidebar
   {
-    width: 75%;
+    width: 90%;
 
     h2 {
       font-family: var(--font-unica);
@@ -63,11 +72,12 @@
       font-family: var(--font-poppins);
       color: #FF8A00;
       padding-top: 1rem;
+      font-size: 1.25rem;
     }
 
     p, li { 
       font-family: var(--font-ubuntu);
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     ul
@@ -78,7 +88,7 @@
 
   .mainContent
   {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     
     div {
       padding-bottom: 2rem;
@@ -99,30 +109,131 @@
 
     p { 
       font-family: var(--font-ubuntu);
-      font-size: 1.1rem;
+      font-size: 1.25rem;
     }
 
     
   }
+
+    @media (min-width: 3072px){
+      width: 40%;
+    }
+    @media (min-width: 2250px) {
+      width: 50%;
+    }
+    @media (min-width: 1920px) and (max-width: 2250px) {
+      width: 60%;
+    }
+    @media (max-width: 1920px) {
+      width: 60%;
+    }
+    @media (max-width: 1400px) {
+      width: 80%;
+    }
+    @media (max-width: 1200px) {
+      width: 90%;
+    }
+    
 }
 
-.slideshow {
-  margin-top: 6rem;
+.logoAssets
+{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-self: center;
+  font-size: 1.5rem;
+  gap: 2rem;
+
+  font-family: var(--font-unica);
+  color: #FF8A00;
+
+  width: 80%;
+
+  .heading
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .assets
+  {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+    img
+    {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 3072px){
+    width: 40%;
+  }
+  @media (min-width: 2250px) {
+    width: 50%;
+  }
+  @media (min-width: 1920px) and (max-width: 2250px) {
+    width: 60%;
+  }
+  @media (max-width: 1920px) {
+    width: 60%;
+  }
+  @media (max-width: 1400px) {
+    width: 80%;
+  }
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
 }
 
-.aboutArtwork {
+.screenshotSection
+{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8rem 8rem 0 8rem;
+  justify-self: center;
+  font-size: 1.5rem;
+  padding-top: 6rem;
+  width: 75%;
 
-  @media (max-width: 1165px) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  font-family: var(--font-unica);
+  color: #FF8A00;
+
+  .heading
+  {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
   }
 
-  @media screen and (max-width: 1400px) {
-    padding: 6rem 1rem 0 1rem;
+  .screenshots
+  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+
+    img
+    {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      width: auto;
+      object-fit: contain;
+    }
   }
 }
-

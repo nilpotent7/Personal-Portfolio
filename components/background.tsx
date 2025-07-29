@@ -10,9 +10,11 @@ const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 function randomString(length : number, isArticle : boolean)
 {
     if(isArticle) return "";
+
     let string = "";
     for(let i = 0; i < length; i++)
         string += chars[Math.floor(Math.random() * chars.length)] + " ";
+
     return string;
 }
 
@@ -40,13 +42,13 @@ function useWindowSize() {
 
 export default function Background() {
   
-    const pathname = usePathname();
-    const isSpecial = pathname.includes('/articles/raytracing') && pathname.includes('something-else');
-    const isArticle = pathname.startsWith('/articles');
+    const isTEMP = usePathname().startsWith('/articles/raytracing');
+    const isPageToHide = usePathname().includes('geodyssey');
+    const isArticle = usePathname().startsWith('/articles');
     
     const size = useWindowSize();
     const [frame, setFrame] = useState(0);
-    const [text, setText] = useState(randomString(size.height * size.width * 0.01, isArticle || isSpecial));
+    const [text, setText] = useState(randomString(size.height * size.width * 0.01, isArticle || isTEMP || isPageToHide));
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
@@ -95,7 +97,7 @@ export default function Background() {
             onMouseMove={handleMouseMove}
             
             style={
-              isSpecial ? {
+              (isTEMP || isPageToHide) ? {
                 backgroundColor: 'white',
                 WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0), rgba(0,0,0,0))`,
                 maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0), rgba(0,0,0,0))`,
