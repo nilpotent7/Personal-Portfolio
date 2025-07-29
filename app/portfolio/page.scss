@@ -114,6 +114,14 @@
         grid-column: 1 / -1;
       }
 
+      @media (min-width: 2250px) {
+        width: 40%;
+      }
+
+      @media (min-width: 1920px) and (max-width: 2250px) {
+        width: 50%;
+      }
+
       @media (max-width: 1400px) {
         width: 100%;
       }
@@ -131,6 +139,108 @@
         width: 100%;
       }
     }
+
+    .oddProject
+    {
+      width: 40%;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      
+      .projectCard {
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 1.5rem;
+        overflow: hidden;
+        box-shadow: 0 0 40px 15px #000;
+        background-size: cover;
+        background-position: center;
+        background-clip: padding-box;
+        transition: transform 200ms ease-in-out;
+
+        width: 100%;
+        aspect-ratio: 1.665;
+
+        img, Image {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .cardOverlay {
+          align-content: flex-end;
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          right: 0;
+          height: 15rem;
+          padding: 1rem;
+          background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, transparent 101%);
+          color: #fff;
+          opacity: 0;
+          transition: opacity 200ms ease-in-out;
+          transform: translateZ(0);
+          backface-visibility: hidden;
+
+          h2 {
+            font-family: var(--font);
+            font-size: 1.75rem;
+          }
+
+          p {
+            font-family: var(--font-ubuntu);
+            font-size: 1.2rem;
+          }
+        }
+
+        &:hover {
+          transform: scale(1.025);
+          cursor: pointer;
+
+          .cardOverlay {
+            opacity: 1;
+          }
+
+          @media (max-width: 300px) {
+            .cardOverlay {
+              opacity: 0;
+            }
+          }
+        }
+
+        h2 {
+          font-family: var(--font);
+          font-size: 1.25rem;
+        }
+      }
+
+      @media (min-width: 2250px) {
+        width: 20%;
+      }
+
+      @media (min-width: 1920px) and (max-width: 2250px) {
+        width: 25%;
+      }
+
+      @media (max-width: 1400px) {
+        width: 50%;
+      }
+  
+      @media (max-width: 900px) {
+        width: 80%;
+      }
+
+      @media (max-width: 800px) {
+        width: 90%;
+      }
+
+      @media (max-width: 550px) {
+        width: 100%;
+      }
+    }
+
   }
 
   @media (max-width: 550px) {

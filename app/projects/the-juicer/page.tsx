@@ -1,4 +1,4 @@
-import '@/app/projects/gas-station/page.scss'
+import '@/app/projects/the-juicer/page.scss'
 import { Carousel } from '@/components/carousel'
 import DescriptionCard from '@/components/DescriptionCard'
 

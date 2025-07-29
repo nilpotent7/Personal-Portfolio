@@ -1,12 +1,13 @@
 import './globals.scss'
-import { Poppins, Ubuntu_Condensed, JetBrains_Mono } from 'next/font/google';
+import { Poppins, Ubuntu_Condensed, JetBrains_Mono, Unica_One } from 'next/font/google';
 import Footer from '@/components/footer'
 import Navbar from "@/components/navbar";
 import Background from '@/components/background'
 
-const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ['latin'], variable: '--font-poppins', })
+const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ['latin'], variable: '--font-poppins', display: 'swap',})
 const ubuntu = Ubuntu_Condensed({ weight: ['400'], subsets: ['latin'], variable: '--font-ubuntu', })
-const jetbrainsMono = JetBrains_Mono({ weight: ['100', '200', '300', '400', '500', '600', '700', '800'], subsets: ['latin'], variable: '--font-jetbrains', });
+const jetbrainsMono = JetBrains_Mono({ weight: ['100', '200', '300', '400', '500', '600', '700', '800'], subsets: ['latin'], variable: '--font-jetbrains', display: 'swap',});
+const unicaOne = Unica_One({ weight: ['400'], subsets: ['latin'], variable: '--font-unica', display: 'swap',});
 
 export const metadata = {
   metadataBase: new URL("https://nilpotent.vercel.app"),
@@ -29,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${ubuntu.variable} ${jetbrainsMono.variable}`}>
+      <body className={`${poppins.variable} ${ubuntu.variable} ${jetbrainsMono.variable} ${unicaOne.variable}`}>
       <Navbar/>
       <Background/>
       {children}

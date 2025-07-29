@@ -31,6 +31,14 @@ export default function PortfolioPage() {
                 <h1>Games</h1>
 
                 <div className="projectTypeGrid">
+                    <Link href='/geodyssey' className='projectCard'>
+                        <Image src='/projects/Geodyssey/SquareCapsuleHighRes.png' alt='Geodyssey Thumbnail' fill/>
+                        <div className="cardOverlay">
+                            <h2>Geodyssey</h2>
+                            <p>A perplexing Non-Euclidean 3D experience</p>
+                        </div>
+                    </Link>
+
                     <Link href='/projects/the-juicer' className='projectCard'>
                         <Image src='/projects/TheJuicer2.jpg' alt='TheJuicer2 Thumbnail' fill/>
                         <div className="cardOverlay">
@@ -54,7 +62,9 @@ export default function PortfolioPage() {
                             <p>3D Endless Shooter made in 7 days</p>
                         </div>
                     </Link>
+                </div>
 
+                <div className='oddProject'>
                     <Link href='/projects/glued-together' className='projectCard'>
                         <Image src='/projects/GluedTogether.jpg' alt='GluedTogether Thumbnail' fill/>
                         <div className="cardOverlay">
@@ -84,7 +94,10 @@ export default function PortfolioPage() {
                             <p>Abandonded sewerage rumoured to be connected with dark rituals</p>
                         </div>
                     </Link>
+                    
+                </div>
 
+                <div className='oddProject'>
                     <Link href='/projects/ringworld' className='projectCard'>
                         <Image src='/projects/RingWorld.jpg' alt='RingWorld Artwork' fill/>
                         <div className="cardOverlay">

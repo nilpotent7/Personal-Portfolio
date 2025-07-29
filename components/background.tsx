@@ -41,10 +41,10 @@ function useWindowSize() {
 export default function Background() {
   
     const isArticle = usePathname().startsWith('/articles');
-    const isTEMP = usePathname().startsWith('/articles/raytracing');
+    const isisSpecial = usePathname().startsWith('/articles/raytracing') || usePathname().startsWith('/geodyssey');
     const size = useWindowSize();
     const [frame, setFrame] = useState(0);
-    const [text, setText] = useState(randomString(size.height * size.width * 0.01, isArticle || isTEMP));
+    const [text, setText] = useState(randomString(size.height * size.width * 0.01, isArticle || isisSpecial));
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
@@ -93,7 +93,7 @@ export default function Background() {
             onMouseMove={handleMouseMove}
             
             style={
-              isTEMP ? {
+              isisSpecial ? {
                 backgroundColor: 'white',
                 WebkitMaskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0), rgba(0,0,0,0))`,
                 maskImage: `radial-gradient(circle 500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0,0,0,0), rgba(0,0,0,0))`,
