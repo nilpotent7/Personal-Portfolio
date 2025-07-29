@@ -237,3 +237,49 @@
     }
   }
 }
+
+.license
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  font-size: 1.5rem;
+  padding-top: 6rem;
+  width: 75%;
+
+  font-family: var(--font-unica);
+  color: #FF8A00;
+
+  .heading
+  {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .licenseText
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+    h4
+    {
+      padding-top: 1rem;
+    }
+
+    p
+    {
+      color: var(--text-color);
+      font-family: var(--font-ubuntu);
+      font-size: 1.2rem;
+    }
+  }
+}
