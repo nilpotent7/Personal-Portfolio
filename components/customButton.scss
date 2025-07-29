@@ -1,0 +1,53 @@
+.customButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--customButtonTextColor);
+  font-family: var(--font);
+  font-size: 1.2rem;
+
+  border-radius: var(--border-radius);
+  border: 1px solid var(--customButtonSecondary);
+  backdrop-filter: var(--blur);
+  transition: border-color 150ms ease-in-out;
+
+  background: transparent;
+  padding: 0.5rem 1rem;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+
+  cursor: pointer;
+
+  img {
+    transition: transform 150ms ease-in-out;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--customButtonPrimary), var(--customButtonSecondary));
+    background-clip: padding-box;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+
+  z-index: 2;
+
+  &:hover {
+    border-color: transparent;
+
+    img {
+      transform: translateX(10px);
+    }
+    &::before {
+      opacity: 1;
+    }
+  }
+}
