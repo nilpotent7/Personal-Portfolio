@@ -37,7 +37,7 @@ export default function Geodyssey() {
 
         <section className='written'>
             <div className='sidebar'>
-                <h2 style={{paddingBottom: "1.8rem"}}>Factsheet</h2>
+                <h2>Factsheet</h2>
 
                 <h3>Official Game Title</h3>
                 <p>Geodyssey</p>
@@ -66,10 +66,7 @@ export default function Geodyssey() {
                 <p>Worldwide</p>
 
                 <h3>Store</h3>
-                <p><Link href='https://store.steampowered.com/app/3878850/Geodyssey/'>Available on Steam</Link></p>
-
-                {/* <h3>Website</h3>
-                <p>nilpotent.vercel.app/geodyssey</p> */}
+                <p><Link href='https://store.steampowered.com/app/3878850/Geodyssey/' style={{ color: "#FF8A00"}}>Available on Steam</Link></p>
 
                 <h3>Features</h3>
                 <ul>
@@ -80,23 +77,25 @@ export default function Geodyssey() {
                         Non-Euclidean World
                     </li>
                     <li>
-                        Puzzles involving orientation & sense of scale
+                        Escher-like Architecture
                     </li>
                 </ul>
             </div>
 
 
             <div className='mainContent'>
-                <div className='elevatorPitch'>
-                    <h2>Elevator Pitch</h2>
+                {/* <div className='elevatorPitch'>
+                    <h2>Pitch</h2>
                     <p>
-                        Explore spaces that defy logic and experience a reality that cannot exist. Immerse in a Non-Euclidean world that you cannot wrap your head around.
-                        Explore bizarre curved geometries that distort your sense of depth and perspective.
+                        Geodyssey is a mind-bending first-person adventure game that challenges your perception.
                     </p>
                     <p>
-                        Geodyssey is a mind-bending first-person adventure game that challenges your perception with confusing environments. 
+                        Geodyssey gives you a bizarre Non-Euclidean experience which challenges player's perception, expectations, and plays with sense of scale & orientation.
                     </p>
-                </div>
+                    <p style={{paddingTop: '0.5rem'}}>
+                        Turn the familiar into something perplexing. Experience the perplexing impossible.
+                    </p>
+                </div> */}
 
                 <div className='description'>
                     <h2>Description</h2>
@@ -114,8 +113,17 @@ export default function Geodyssey() {
                         alt="Geodyssey Header Banner"
                     />
                 </div>
+
+                <iframe src="https://store.steampowered.com/widget/3878850/"
+                    frameBorder="0"
+                    width="646"
+                    height="190"
+                    style={{ colorScheme: 'light' }}
+                />
             </div>
         </section>
+
+        
 
         <section className='logoAssets'>
             <div className='heading'>
@@ -180,7 +188,7 @@ export default function Geodyssey() {
                 <h1>License</h1>
             </div>
             <div className='licenseText'>
-                <p>All content on this page falls under <Link style={{ color: "#FF8A00"}} href='https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1'>CC BY 4.0</Link></p>
+                <p>All content on this page is licensed under <Link style={{ color: "#FF8A00"}} href='https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1'>CC BY 4.0</Link></p>
                 <p>You are free to copy, redistribute, remix, transform, or build upon the material for any purpose, even commercially.</p>
                 <p>The licensor cannot revoke these freedoms as long as you follow the license terms.</p>
                 <h4>Under the following terms:</h4>
