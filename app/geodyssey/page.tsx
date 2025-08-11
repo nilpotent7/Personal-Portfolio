@@ -56,6 +56,9 @@ export default function Geodyssey() {
                 <h3>Genre</h3>
                 <p>Surreal / Adventure</p>
 
+                <h3>Release Status</h3>
+                <p><Link href='https://store.steampowered.com/app/3893550/Geodyssey_Demo/' style={{ color: "#FF8A00"}}>Playable Demo</Link></p>
+
                 <h3>Platforms</h3>
                 <p>PC</p>
 
@@ -79,23 +82,17 @@ export default function Geodyssey() {
                     <li>
                         Escher-like Architecture
                     </li>
+                    <li>
+                        Mind-Bending Puzzles
+                    </li>
+                    <li>
+                        Surreal Ambience
+                    </li>
                 </ul>
             </div>
 
 
             <div className='mainContent'>
-                {/* <div className='elevatorPitch'>
-                    <h2>Pitch</h2>
-                    <p>
-                        Geodyssey is a mind-bending first-person adventure game that challenges your perception.
-                    </p>
-                    <p>
-                        Geodyssey gives you a bizarre Non-Euclidean experience which challenges player's perception, expectations, and plays with sense of scale & orientation.
-                    </p>
-                    <p style={{paddingTop: '0.5rem'}}>
-                        Turn the familiar into something perplexing. Experience the perplexing impossible.
-                    </p>
-                </div> */}
 
                 <div className='description'>
                     <h2>Description</h2>
@@ -115,6 +112,13 @@ export default function Geodyssey() {
                 </div>
 
                 <iframe src="https://store.steampowered.com/widget/3878850/"
+                    frameBorder="0"
+                    width="646"
+                    height="190"
+                    style={{ colorScheme: 'light' }}
+                />
+
+                <iframe src="https://store.steampowered.com/widget/3893550/"
                     frameBorder="0"
                     width="646"
                     height="190"
