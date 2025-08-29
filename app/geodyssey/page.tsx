@@ -133,13 +133,13 @@ export default function Geodyssey() {
             <div className='heading'>
                 <h1>Logos & Assets</h1>
                 <CustomButton
-                    title='Download' href='https://drive.google.com/file/d/1MLeogbPIPDFze2hhZCcaRkrCL8ypcP30/view?usp=sharing' arrowSpace={1}
+                    title='Download' href='https://drive.google.com/drive/folders/13Cksi0ksSONSMej7cdsDQkAIdqnEJzLW?usp=sharing' arrowSpace={1}
                     border={2} primary='#FF8A00' secondary='#FF4E00' text='var(--text-color)'
                 />
             </div>
             <div className='assets'>
                 <img src='/projects/Geodyssey/Logo.png' alt='Geodyssey Logo'/>
-                <img src='/projects/Geodyssey/HeaderCapsule.png' alt='Geodyssey Header Image'/>
+                <img src='/projects/Geodyssey/Background.png' alt='Geodyssey Key Art'/>
             </div>
         </section>
 
@@ -147,7 +147,7 @@ export default function Geodyssey() {
             <div className='heading'>
                 <h1>Screenshots</h1>
                 <CustomButton
-                    title='Download' href='https://drive.google.com/file/d/1pDhHEwKD6ya3BjGeVRJIbXcIVmWthRc7/view?usp=sharing' arrowSpace={1}
+                    title='Download' href='https://drive.google.com/drive/folders/1fF2q_6kfuHWfIryI46nJ2ezCMsHnVdNF?usp=sharing' arrowSpace={1}
                     border={2} primary='#FF8A00' secondary='#FF4E00' text='var(--text-color)'
                 />
             </div>
@@ -157,7 +157,7 @@ export default function Geodyssey() {
                     alt="In-game Screenshot"
                 />
                 <img
-                    src="/projects/Geodyssey/Screenshot2.png"
+                    src="/projects/Geodyssey/Screenshot6.png"
                     alt="In-game Screenshot"
                 />
                 <img
@@ -173,7 +173,7 @@ export default function Geodyssey() {
                     alt="In-game Screenshot"
                 />
                 <img
-                    src="/projects/Geodyssey/Screenshot6.png"
+                    src="/projects/Geodyssey/Screenshot2.png"
                     alt="In-game Screenshot"
                 />
                 <img
