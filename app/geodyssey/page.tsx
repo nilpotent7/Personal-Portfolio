@@ -1,6 +1,7 @@
 import '@/app/geodyssey/page.scss'
 import Link from "next/link"
 import CustomButton from '@/components/customButton'
+import VideoEmbed from '@/components/videoEmbed';
 
 export const metadata = {
     metadataBase: new URL("https://nilpotent.vercel.app"),
@@ -143,6 +144,16 @@ export default function Geodyssey() {
             </div>
         </section>
 
+        <section className='contentSection'>
+            <div className='heading'>
+                <h1>Videos & Gameplay</h1>
+            </div>
+            <div className='contents'>
+                <iframe width="710" height="400" src="https://www.youtube.com/embed/1lKpN6OHo88?si=AEzjjGeXGIwn3ie7&amp;start=23" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe width="710" height="400" src="https://www.youtube.com/embed/r4ArzdflXpA?si=ulnpgem4G79mLZPL" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            </div>
+        </section>
+
         <section className='screenshotSection'>
             <div className='heading'>
                 <h1>Screenshots</h1>
@@ -192,8 +203,9 @@ export default function Geodyssey() {
                 <h1>License</h1>
             </div>
             <div className='licenseText'>
-                <p>All content on this page is licensed under <Link style={{ color: "#FF8A00"}} href='https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1'>CC BY 4.0</Link></p>
-                <p>You are free to copy, redistribute, remix, transform, or build upon the material for any purpose, even commercially.</p>
+                <p>All content on this page, except 'Videos & Gameplay' section, is licensed under <Link style={{ color: "#FF8A00"}} href='https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1'>CC BY 4.0</Link></p>
+                <p>Content on 'Videos & Gameplay' section is not licensed.</p>
+                <p style={{ paddingTop: '0.5rem' }}>You are free to copy, redistribute, remix, transform, or build upon the material for any purpose, even commercially.</p>
                 <p>The licensor cannot revoke these freedoms as long as you follow the license terms.</p>
                 <h4>Under the following terms:</h4>
                 <p>You must give <Link style={{ color: "#FF8A00"}} href='https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1#ref-appropriate-credit'>appropriate credit</Link> to this <Link style={{ color: "#FF8A00"}} href='https://nilpotent.vercel.app/geodyssey'>page</Link>.</p>

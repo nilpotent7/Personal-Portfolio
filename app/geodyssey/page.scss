@@ -216,6 +216,52 @@
   }
 }
 
+.contentSection
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  font-size: 1.5rem;
+  padding-top: 6rem;
+  width: 75%;
+  z-index: 1;
+
+  font-family: var(--font-unica);
+  color: #FF8A00;
+
+  .heading
+  {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 1;
+  }
+
+  .contents
+  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+    z-index: 1;
+
+    img
+    {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      width: auto;
+      object-fit: contain;
+      z-index: 1;
+    }
+  }
+}
+
 .screenshotSection
 {
   display: flex;
