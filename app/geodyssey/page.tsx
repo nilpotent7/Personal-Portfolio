@@ -205,7 +205,7 @@ export default function Geodyssey() {
             </div>
             <div className='licenseText'>
                 <p>All content on this page, except &apos;Videos & Gameplay&apos; section, is licensed under <Link style={{ color: "#FF8A00"}} href='https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1'>CC BY 4.0</Link></p>
-                <p>Content on 'Videos & Gameplay' section is not licensed.</p>
+                <p>Content on &apos;Videos & Gameplay&apos; section is not licensed.</p>
                 <p style={{ paddingTop: '0.5rem' }}>You are free to copy, redistribute, remix, transform, or build upon the material for any purpose, even commercially.</p>
                 <p>The licensor cannot revoke these freedoms as long as you follow the license terms.</p>
                 <h4>Under the following terms:</h4>
