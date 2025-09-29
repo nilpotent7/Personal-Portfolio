@@ -150,8 +150,7 @@ export default function Geodyssey() {
             </div>
             <div className='contents'>
                 <iframe width="710" height="400" src="https://www.youtube.com/embed/1lKpN6OHo88?si=AEzjjGeXGIwn3ie7&amp;start=23" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                {/* <iframe width="710" height="400" src="https://www.youtube.com/embed/r4ArzdflXpA?si=ulnpgem4G79mLZPL" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-                <iframe src="https://player.twitch.tv/?video=2567817079&parent=nilpotent.vercel.app" frameBorder="0" allowFullScreen scrolling="no" height="400" width="710"></iframe>
+                <iframe width="710" height="400" src="https://www.youtube.com/embed/GrgQjjF0O0U?si=tmStECyyUlf2xs-i" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
         </section>
 
@@ -169,11 +168,15 @@ export default function Geodyssey() {
                     alt="In-game Screenshot"
                 />
                 <img
-                    src="/projects/Geodyssey/Screenshot6.png"
+                    src="/projects/Geodyssey/Screenshot3.png"
                     alt="In-game Screenshot"
                 />
                 <img
-                    src="/projects/Geodyssey/Screenshot3.png"
+                    src="/projects/Geodyssey/Screenshot8.png"
+                    alt="In-game Screenshot"
+                />
+                <img
+                    src="/projects/Geodyssey/Screenshot6.png"
                     alt="In-game Screenshot"
                 />
                 <img
@@ -190,10 +193,6 @@ export default function Geodyssey() {
                 />
                 <img
                     src="/projects/Geodyssey/Screenshot7.png"
-                    alt="In-game Screenshot"
-                />
-                <img
-                    src="/projects/Geodyssey/Screenshot8.png"
                     alt="In-game Screenshot"
                 />
             </div>
