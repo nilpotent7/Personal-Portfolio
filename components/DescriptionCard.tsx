@@ -11,7 +11,7 @@ export default function DescriptionCard(
     {
         addButton: boolean, buttonText: string, buttonLink: string, addSocials: boolean,
         imageSource: string, imageSize: Array<string>, imageRounded: boolean,
-        alignCenter: boolean, heading: string, tagline: string,  text: JSX.Element
+        alignCenter: boolean, heading: string, tagline: string,  text: any
 
     }
 ) {

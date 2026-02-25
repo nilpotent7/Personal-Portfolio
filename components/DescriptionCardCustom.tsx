@@ -6,8 +6,8 @@ export default function DescriptionCardCustom(
         rightContent,
     }: 
     {
-        leftContent: JSX.Element,
-        rightContent: JSX.Element
+        leftContent: any,
+        rightContent: any
 
     }
 ) {

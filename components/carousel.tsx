@@ -114,8 +114,8 @@ export const Carousel = ({ slides }: CarouselProps) => {
                     slide.type == 0 ?
                     <>
                       <Image width={3840/4} height={2160/4} unoptimized
-                      // <img
-                        ref={(el) => (imageRefs.current[index] = el)}
+                    //   <img
+                        // ref={(el) => (imageRefs.current[index] = el)}
                         className={styles.emblaSlideImg}
                         src={slide.src || "/placeholder.svg"}
                         alt={slide.alt}
