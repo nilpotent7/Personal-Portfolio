@@ -1,15 +1,14 @@
 'use client'
 
 import '@/components/socials.scss'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-export default function Socials({ size, width } : { size : number, width : number }) {
+export default function Socials({ size, width }: { size: number, width: number }) {
     return (
-        <div className='socials' style={{width: width }}>
+        <div className='socials' style={{ width: width }}>
             <motion.a
                 href="https://github.com/nilpotent7/" target="_blank"
-                whileHover={{ scale: 1.1}}
+                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
             >
                 <div className='iconSVG'
@@ -24,7 +23,7 @@ export default function Socials({ size, width } : { size : number, width : numbe
 
             <motion.a
                 href="https://x.com/nilpotent47" target="_blank"
-                whileHover={{ scale: 1.1}}
+                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
             >
                 <div className='iconSVG'
@@ -38,8 +37,23 @@ export default function Socials({ size, width } : { size : number, width : numbe
             </motion.a>
 
             <motion.a
+                href="https://www.linkedin.com/in/behrozk/" target="_blank"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+            >
+                <div className='iconSVG'
+                    style={{
+                        width: (size * 0.85) + "px",
+                        height: (size * 0.85) + "px",
+                        WebkitMaskImage: "url('/icons/linkedin.svg')",
+                        maskImage: "url('/icons/linkedin.svg')",
+                    }}
+                />
+            </motion.a>
+
+            <motion.a
                 href="https://www.instagram.com/nilpotent7" target="_blank"
-                whileHover={{ scale: 1.1}}
+                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
             >
                 <div className='iconSVG'
@@ -51,10 +65,10 @@ export default function Socials({ size, width } : { size : number, width : numbe
                     }}
                 />
             </motion.a>
-                
+
             <motion.a
                 href="https://nilpotent.itch.io/" target="_blank"
-                whileHover={{ scale: 1.1}}
+                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
             >
                 <div className='iconSVG'
@@ -67,7 +81,7 @@ export default function Socials({ size, width } : { size : number, width : numbe
                 />
             </motion.a>
 
-      </div>
+        </div>
     );
 };
 

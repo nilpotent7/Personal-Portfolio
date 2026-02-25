@@ -21,7 +21,7 @@
       linear-gradient(to right, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0) 60%),
       url('../public/Artwork.jpg');
 
-    filter: sepia(0.75) hue-rotate(350deg);
+    // filter: sepia(0.75) hue-rotate(350deg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,7 +51,6 @@
     }
 
     p {
-      // color: var(--primary-hover);
       background-image: var(--gradient);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
@@ -141,6 +140,10 @@
   flex-direction: column;
   align-items: center;
   padding: 8rem 8rem 0 8rem;
+
+  b {
+    color: var(--primary-hover);
+  }
 
   @media (max-width: 1165px) {
     padding-left: 2rem;

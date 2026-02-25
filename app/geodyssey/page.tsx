@@ -2,6 +2,7 @@ import '@/app/geodyssey/page.scss'
 import Link from "next/link"
 import CustomButton from '@/components/customButton'
 import VideoEmbed from '@/components/videoEmbed';
+import Image from 'next/image';
 
 export const metadata = {
     metadataBase: new URL("https://nilpotent.vercel.app"),
@@ -149,7 +150,7 @@ export default function Geodyssey() {
                 <h1>Videos & Gameplay</h1>
             </div>
             <div className='contents'>
-                <iframe width="710" height="400" src="https://www.youtube.com/embed/1lKpN6OHo88?si=AEzjjGeXGIwn3ie7&amp;start=23" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe width="710" height="400" src="https://www.youtube.com/embed/dSdR6zAgCkI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 <iframe width="710" height="400" src="https://www.youtube.com/embed/GrgQjjF0O0U?si=tmStECyyUlf2xs-i" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
         </section>

@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${poppins.variable} ${ubuntu.variable} ${jetbrainsMono.variable} ${unicaOne.variable}`}>
       <Navbar/>
-      <Background/>
+      {/* <Background/> */}
       {children}
       <Footer />
       </body>

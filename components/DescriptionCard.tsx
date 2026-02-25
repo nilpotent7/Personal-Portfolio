@@ -37,7 +37,7 @@ export default function DescriptionCard(
                         }/>
                     {
                         addSocials ? <>
-                            <div className='descriptionCardSocials'><Socials size={40} width={300} /></div>
+                            <div className='descriptionCardSocials'><Socials size={40} width={375} /></div>
                         </> : <></>
                     }
                 
