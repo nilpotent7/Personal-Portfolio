@@ -35,7 +35,7 @@ export default function NeuralNetworkCaseStudy() {
             <section>
                 <h3 style={{marginTop: '0'}}>Reinventing the Wheel</h3>
                 <p>
-                    Building things from scratch teaches you a lot of &apos;under the hood&apos; details, which you would have otherwise. These little details are invaluable for a deeper understanding. Here&apos;s what I learnt by implementing entire Neural Network model, using only Python & its library Numpy.
+                    Building things from scratch teaches you a lot of &apos;under the hood&apos; details, which you wouldn&apos;t have otherwise. These little details are invaluable for a deeper understanding. Here&apos;s what I learnt by implementing entire Neural Network model, using only Python & its library Numpy.
                 </p>
                 <h5 style={{marginTop: '2rem'}}>August 2023</h5>
                 <h3 style={{marginBottom: '0.5rem', marginTop: '0'}}>THE PROJECT</h3>
