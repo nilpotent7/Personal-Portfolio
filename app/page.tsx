@@ -34,27 +34,27 @@ export default function Home() {
                             </p>
                             <p>
                                 Things I've worked on:
-                                <ul style={{ marginLeft: "24px" }}>
-                                    <li>
-                                        Neural Networks & Machine Learning
-                                    </li>
-                                    <li>
-                                        Advanced Analytical Tools (including NLP and Sentiment analysis),
-                                    </li>
-                                    <li>
-                                        High Performance Rendering Algorithms (Raytracing & Raymarching),
-                                    </li>
-                                    <li>
-                                        GPU-accelerated Parallel Computing tasks
-                                    </li>
-                                    <li>
-                                        Web Apps & Native Desktop Apps
-                                    </li>
-                                    <li>
-                                        Web Automation systems, integrated with external webhooks
-                                    </li>
-                                </ul>
                             </p>
+                            <ul style={{ marginLeft: "24px" }}>
+                                <li>
+                                    Neural Networks & Machine Learning
+                                </li>
+                                <li>
+                                    Advanced Analytical Tools (including NLP and Sentiment analysis),
+                                </li>
+                                <li>
+                                    High Performance Rendering Algorithms (Raytracing & Raymarching),
+                                </li>
+                                <li>
+                                    GPU-accelerated Parallel Computing tasks
+                                </li>
+                                <li>
+                                    Web Apps & Native Desktop Apps
+                                </li>
+                                <li>
+                                    Web Automation systems, integrated with external webhooks
+                                </li>
+                            </ul>
                         </div>
                         <div className="descriptionCardButton">
                             <OpenButton title="View Portfolio" href="/portfolio" arrowSpace={20} />

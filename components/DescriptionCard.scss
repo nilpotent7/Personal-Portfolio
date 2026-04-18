@@ -79,7 +79,7 @@
     .descriptionCardText{
       margin-top: 25px;
       .descriptionCardMainText{
-        h1, h3 , p {
+        h1, h3, p {
           font-weight: 400;
         }
 
@@ -100,7 +100,7 @@
           font-weight: 300;
         }
 
-        p {
+        p, ul {
           font-family: var(--font-poppins);
           font-weight: 300;
           color: var(--text-color-light);
