@@ -65,7 +65,7 @@ export default function GasStation() {
             ]}/>
         </section>
         <section className='aboutArtwork'>
-            <DescriptionCard addButton={true} buttonText="Play" buttonLink="https://nilpotent.itch.io/chronostrike" addSocials={false} imageSource="/projects/ChronoStrike/CoverArt.jpg" imageSize={["3840px", "2160px"]} imageRounded={false} alignCenter={true} heading="ChronoStrike" tagline='February 2023' text={
+            <DescriptionCard addButton={true} buttonText="Play" buttonLink="https://nilpotent.itch.io/chronostrike" addSocials={false} imageSource="/projects/ChronoStrike/CoverArt.png" imageSize={["3840px", "2160px"]} imageRounded={false} alignCenter={true} heading="ChronoStrike" tagline='February 2023' text={
                 <>
                     <p>
                         Explore procedurally generated environments with unique variations and layouts. 

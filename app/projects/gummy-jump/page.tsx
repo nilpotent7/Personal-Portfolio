@@ -77,7 +77,7 @@ export default function GasStation() {
                         2D Platformer with gritty graphics & precise movement. 
                         Leap and dodge through hazardous environments, landing precise jumps, in an attempt to escape the ominous factory. 
                     </p>
-                    <p>Freelance Project | Made in Unity engine</p>
+                    <p>Freelance Project | Made in Unity Engine</p>
                 </>
             }/>
         </section>

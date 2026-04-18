@@ -90,7 +90,7 @@ export default function GasStation() {
                         Scavange coins to upgrade weapons & powerups to even the odds.
                     </p>
                     <p>Designed & Optimized levels for the game</p>
-                    <p>Freelance Project | Made in Unity engine</p>
+                    <p>Freelance Project | Made in Unity Engine</p>
                 </>
             }/>
         </section>
