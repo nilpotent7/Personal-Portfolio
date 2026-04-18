@@ -99,11 +99,11 @@ export default function Home() {
                     </div>
                 </Link>
 
-                <Link href='/projects/gas-station' className='projectCard'>
-                    <Image src='/projects/GasStation.jpg' alt='GasStation Artwork' fill />
+                <Link href='/projects/themyth' className='projectCard'>
+                    <Image src='/projects/TheMyth.png' alt='TheMyth Thumbnail' fill/>
                     <div className="cardOverlay">
-                        <h2>Gas Station</h2>
-                        <p>The only gas station in the middle of vast wilderness</p>
+                        <h2>TheMyth</h2>
+                        <p>Unravel the mysteries of an abandoned World War 2 Ship</p>
                     </div>
                 </Link>
             </div>
